@@ -1,0 +1,826 @@
+﻿QualifiedName,Name,Complexity,Coupling,Size,Lack of Cohesion,CBO,RFC,SRFC,DIT,NOC,WMC,LOC,CMLOC,NOF,NOSF,NOM,NOSM,NORM,LCOM,LCAM,LTCC,ATFD,SI,#(C&I),#C,#I,LOC,AC,EC,Abs,Ins,ND,WMC,MCC,NBD,LOC,#Pa,#MC,#AF
+junit5-2016-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>com.example.mockito,com.example.mockito,low,low,low,low,,,,,,4,18,,,,,,,,,,,,2,1,1,18,0,1,0.5,1,0.5,4,,,,,,
+com.example.mockito.InjectMock,InjectMock,low,low,low,low,0,0,0,1,0,0,3,0,0,0,0,0,0,0,0,0,0,0,,,,3,,,,,,0,,,,,,
+com.example.mockito.MockitoExtension,MockitoExtension,low,low-medium,low,low,6,34,4,1,0,4,15,13,1,0,4,0,0,0,0.45,0.833,0,0,,,,15,,,,,,4,,,,,,
+<Method>com.example.mockito.MockitoExtension.public MockitoExtension( ): void,MockitoExtension( ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>com.example.mockito.MockitoExtension.public postProcessTestInstance( TestExtensionContext ): void,postProcessTestInstance( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+"<Method>com.example.mockito.MockitoExtension.public resolve( Parameter, MethodContext, ExtensionContext ): Object","resolve( Parameter, MethodContext, ExtensionContext ): Object",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,3,2,1
+"<Method>com.example.mockito.MockitoExtension.public supports( Parameter, MethodContext, ExtensionContext ): boolean","supports( Parameter, MethodContext, ExtensionContext ): boolean",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,3,1,0
+<Field>com.example.mockito.MockitoExtension->mocksInScope,final mocksInScope : ContextScope,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>com.example.timing,com.example.timing,low,low,low,low,,,,,,4,18,,,,,,,,,,,,1,1,0,18,0,1,0,1,0,4,,,,,,
+com.example.timing.TimingExtension,TimingExtension,low,low,low,low,3,13,10,1,0,4,18,16,0,1,4,0,0,0,0.5,0,0,0,,,,18,,,,,,4,,,,,,
+<Method>com.example.timing.TimingExtension.private afterEach( TestExtensionContext ): void,afterEach( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,1,8,0
+<Method>com.example.timing.TimingExtension.private beforeEach( TestExtensionContext ): void,beforeEach( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,4,0
+<Method>com.example.timing.TimingExtension.private createKey( Method ): String,createKey( Method ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>com.example.timing.TimingExtension.public registerExtensions( ExtensionRegistry ): void,registerExtensions( ExtensionRegistry ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,2,0
+<Field>com.example.timing.TimingExtension->TIMING_KEY_PREFIX,static final TIMING_KEY_PREFIX : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.api,org.junit.gen5.api,low,low,medium-high,low,,,,,,93,217,,,,,,,,,,,,12,2,10,217,1,2,0.833,0.667,0.5,93,,,,,,
+org.junit.gen5.api.AfterAll,AfterAll,low,low,low,low,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,,,,4,,,,,,0,,,,,,
+org.junit.gen5.api.AfterEach,AfterEach,low,low,low,low,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,,,,4,,,,,,0,,,,,,
+org.junit.gen5.api.Assertions,Assertions,medium-high,low,low-medium,low-medium,2,62,34,1,0,66,132,131,0,0,1,46,0,0,0.676,0,0,0,,,,132,,,,,,66,,,,,,
+<Method>org.junit.gen5.api.Assertions.private Assertions( ): void,Assertions( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.Assertions.public static assertAll( Executable ): void,static assertAll( Executable ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertAll( String, Executable ): void","static assertAll( String, Executable ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,13,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertEquals( Object, Object ): void","static assertEquals( Object, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertEquals( Object, Object, String ): void","static assertEquals( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertEquals( Object, Object, Supplier ): void","static assertEquals( Object, Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,3,3,0
+<Method>org.junit.gen5.api.Assertions.public static assertFalse( BooleanSupplier ): void,static assertFalse( BooleanSupplier ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertFalse( BooleanSupplier, String ): void","static assertFalse( BooleanSupplier, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertFalse( BooleanSupplier, Supplier ): void","static assertFalse( BooleanSupplier, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,2,0
+<Method>org.junit.gen5.api.Assertions.public static assertFalse( boolean ): void,static assertFalse( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertFalse( boolean, String ): void","static assertFalse( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertFalse( boolean, Supplier ): void","static assertFalse( boolean, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotEquals( Object, Object ): void","static assertNotEquals( Object, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotEquals( Object, Object, String ): void","static assertNotEquals( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotEquals( Object, Object, Supplier ): void","static assertNotEquals( Object, Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,3,3,0
+<Method>org.junit.gen5.api.Assertions.public static assertNotNull( Object ): void,static assertNotNull( Object ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotNull( Object, String ): void","static assertNotNull( Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotNull( Object, Supplier ): void","static assertNotNull( Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,2,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotSame( Object, Object ): void","static assertNotSame( Object, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotSame( Object, Object, String ): void","static assertNotSame( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNotSame( Object, Object, Supplier ): void","static assertNotSame( Object, Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,3,2,0
+<Method>org.junit.gen5.api.Assertions.public static assertNull( Object ): void,static assertNull( Object ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNull( Object, String ): void","static assertNull( Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertNull( Object, Supplier ): void","static assertNull( Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,2,0
+"<Method>org.junit.gen5.api.Assertions.public static assertSame( Object, Object ): void","static assertSame( Object, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertSame( Object, Object, String ): void","static assertSame( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertSame( Object, Object, Supplier ): void","static assertSame( Object, Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,3,2,0
+"<Method>org.junit.gen5.api.Assertions.public static assertThrows( Class, Executable ): void","static assertThrows( Class, Executable ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+<Method>org.junit.gen5.api.Assertions.public static assertTrue( BooleanSupplier ): void,static assertTrue( BooleanSupplier ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertTrue( BooleanSupplier, String ): void","static assertTrue( BooleanSupplier, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertTrue( BooleanSupplier, Supplier ): void","static assertTrue( BooleanSupplier, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,2,0
+<Method>org.junit.gen5.api.Assertions.public static assertTrue( boolean ): void,static assertTrue( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertTrue( boolean, String ): void","static assertTrue( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assertions.public static assertTrue( boolean, Supplier ): void","static assertTrue( boolean, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+<Method>org.junit.gen5.api.Assertions.private static buildPrefix( String ): String,static buildPrefix( String ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assertions.public static expectThrows( Class, Executable ): T","static expectThrows( Class, Executable ): T",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,13,2,8,0
+<Method>org.junit.gen5.api.Assertions.public static fail( String ): void,static fail( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.api.Assertions.public static fail( Supplier ): void,static fail( Supplier ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+"<Method>org.junit.gen5.api.Assertions.private static failEqual( Object, String ): void","static failEqual( Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.api.Assertions.private static failNotEqual( Object, Object, String ): void","static failNotEqual( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,2,0
+"<Method>org.junit.gen5.api.Assertions.private static failNotNull( Object, String ): void","static failNotNull( Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.api.Assertions.private static failNotSame( Object, Object, String ): void","static failNotSame( Object, Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,2,0
+<Method>org.junit.gen5.api.Assertions.private static failNull( String ): void,static failNull( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.api.Assertions.private static failSame( String ): void,static failSame( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+"<Method>org.junit.gen5.api.Assertions.private static format( Object, Object, String ): String","static format( Object, Object, String ): String",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,9,3,6,0
+"<Method>org.junit.gen5.api.Assertions.private static formatClassAndValue( Object, String ): String","static formatClassAndValue( Object, String ): String",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,3,2,2,0
+<Method>org.junit.gen5.api.Assertions.private static nullSafeGet( Supplier ): String,static nullSafeGet( Supplier ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,2,1,1,0
+org.junit.gen5.api.Assumptions,Assumptions,low-medium,low,low,low,2,23,10,1,0,22,41,40,0,0,1,15,0,0,0.573,0,0,0,,,,41,,,,,,22,,,,,,
+<Method>org.junit.gen5.api.Assumptions.private Assumptions( ): void,Assumptions( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( BooleanSupplier ): void,static assumeFalse( BooleanSupplier ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( BooleanSupplier, String ): void","static assumeFalse( BooleanSupplier, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( BooleanSupplier, Supplier ): void","static assumeFalse( BooleanSupplier, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,3,0
+<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( boolean ): void,static assumeFalse( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( boolean, String ): void","static assumeFalse( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeFalse( boolean, Supplier ): void","static assumeFalse( boolean, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( BooleanSupplier ): void,static assumeTrue( BooleanSupplier ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( BooleanSupplier, String ): void","static assumeTrue( BooleanSupplier, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( BooleanSupplier, Supplier ): void","static assumeTrue( BooleanSupplier, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,3,0
+<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( boolean ): void,static assumeTrue( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( boolean, String ): void","static assumeTrue( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumeTrue( boolean, Supplier ): void","static assumeTrue( boolean, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumingThat( BooleanSupplier, Executable ): void","static assumingThat( BooleanSupplier, Executable ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.api.Assumptions.public static assumingThat( boolean, Executable ): void","static assumingThat( boolean, Executable ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,8,2,1,0
+<Method>org.junit.gen5.api.Assumptions.private static throwTestAbortedException( String ): void,static throwTestAbortedException( String ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,3,1,1,0
+org.junit.gen5.api.BeforeAll,BeforeAll,low,low,low,low,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,,,,4,,,,,,0,,,,,,
+org.junit.gen5.api.BeforeEach,BeforeEach,low,low,low,low,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,,,,4,,,,,,0,,,,,,
+org.junit.gen5.api.Disabled,Disabled,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.Disabled.public abstract value( ): String,value( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.Executable,Executable,low,low,low,low,0,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.Executable.public abstract execute( ): void,execute( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.Name,Name,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.Name.public abstract value( ): String,value( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.Nested,Nested,low,low,low,low,0,0,0,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,,,,4,,,,,,0,,,,,,
+org.junit.gen5.api.Tag,Tag,low,low,low,low,0,1,0,1,0,1,6,1,0,0,1,0,0,0,0,0,0,0,,,,6,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.Tag.public abstract value( ): String,value( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.Tags,Tags,low,low,low,low,1,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.Tags.public abstract value( ): Tag,value( ): Tag,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Package>org.junit.gen5.api.extension,org.junit.gen5.api.extension,low,low-medium,medium-high,low,,,,,,39,117,,,,,,,,,,,,21,6,15,117,14,7,0.714,0.333,0.047,39,,,,,,
+org.junit.gen5.api.extension.AfterAllExtensionPoint,AfterAllExtensionPoint,low,low,low,low,1,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.AfterAllExtensionPoint.public abstract afterAll( ContainerExtensionContext ): void,afterAll( ContainerExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.AfterEachExtensionPoint,AfterEachExtensionPoint,low,low,low,low,1,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.AfterEachExtensionPoint.public abstract afterEach( TestExtensionContext ): void,afterEach( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.BeforeAllExtensionPoint,BeforeAllExtensionPoint,low,low,low,low,1,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.BeforeAllExtensionPoint.public abstract beforeAll( ContainerExtensionContext ): void,beforeAll( ContainerExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.BeforeEachExtensionPoint,BeforeEachExtensionPoint,low,low,low,low,1,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.BeforeEachExtensionPoint.public abstract beforeEach( TestExtensionContext ): void,beforeEach( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.ConditionEvaluationResult,ConditionEvaluationResult,low,low,low,low,1,38,3,1,0,6,20,17,2,0,4,2,0,0.333,0.444,0.8,0,0,,,,20,,,,,,6,,,,,,
+"<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.private ConditionEvaluationResult( boolean, String ): void","ConditionEvaluationResult( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,2
+<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.public getReason( ): Optional,getReason( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.public isDisabled( ): boolean,isDisabled( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.public static disabled( String ): ConditionEvaluationResult,static disabled( String ): ConditionEvaluationResult,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.public static enabled( String ): ConditionEvaluationResult,static enabled( String ): ConditionEvaluationResult,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.api.extension.ConditionEvaluationResult.public toString( ): String,toString( ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,0,3,2
+<Field>org.junit.gen5.api.extension.ConditionEvaluationResult->enabled,final enabled : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.api.extension.ConditionEvaluationResult->reason,final reason : Optional,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.api.extension.ContainerExecutionCondition,ContainerExecutionCondition,low,low,low,low,2,1,0,1,1,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.ContainerExecutionCondition.public abstract evaluate( ContainerExtensionContext ): ConditionEvaluationResult,evaluate( ContainerExtensionContext ): ConditionEvaluationResult,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.ContainerExtensionContext,ContainerExtensionContext,low,low,low,low,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,1,,,,,,0,,,,,,
+"org.junit.gen5.api.extension.ContextScope<K,V>",ContextScope,low,low,low,low,2,14,12,1,0,8,28,23,2,0,5,0,0,0.75,0.571,0,0,0,,,,28,,,,,,8,,,,,,
+org.junit.gen5.api.extension.ContextScope.Inheritance,Inheritance,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+"<Method>org.junit.gen5.api.extension.ContextScope<K,V>.public ContextScope( Function, Inheritance ): void","ContextScope( Function, Inheritance ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,1
+"<Method>org.junit.gen5.api.extension.ContextScope<K,V>.public get( ExtensionContext, K ): V","get( ExtensionContext, K ): V",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,2,4,1
+"<Method>org.junit.gen5.api.extension.ContextScope<K,V>.private getInContext( Optional, K ): V","getInContext( Optional, K ): V",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,10,2,6,0
+"<Method>org.junit.gen5.api.extension.ContextScope<K,V>.private putInContext( ExtensionContext, K, V ): void","putInContext( ExtensionContext, K, V ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,2,0
+"<Method>org.junit.gen5.api.extension.ContextScope<K,V>.private valuesFor( ExtensionContext ): Map",valuesFor( ExtensionContext ): Map,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,1
+"<Field>org.junit.gen5.api.extension.ContextScope<K,V>->creator",final creator : Function,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"<Field>org.junit.gen5.api.extension.ContextScope<K,V>->values",values : Map,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.api.extension.ExtendWith,ExtendWith,low,low,low,low,0,1,0,1,0,1,7,1,0,0,1,0,0,0,0,0,0,0,,,,7,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.ExtendWith.public abstract value( ): Class,value( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.extension.ExtensionConfigurationException,ExtensionConfigurationException,medium-high,low,low,low,0,1,0,4,0,1,4,2,0,0,1,0,0,0,0,0,0,0,,,,4,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.ExtensionConfigurationException.public ExtensionConfigurationException( String ): void,ExtensionConfigurationException( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+org.junit.gen5.api.extension.ExtensionContext,ExtensionContext,low,low,low,low,0,7,0,1,2,7,8,7,0,0,7,0,0,0,0.476,0,0,0,,,,8,,,,,,7,,,,,,
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract getAttribute( String ): Object,getAttribute( String ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract getDisplayName( ): String,getDisplayName( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract getElement( ): AnnotatedElement,getElement( ): AnnotatedElement,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract getParent( ): Optional,getParent( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract getTestClass( ): Class,getTestClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+"<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract putAttribute( String, Object ): void","putAttribute( String, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,0,0
+<Method>org.junit.gen5.api.extension.ExtensionContext.public abstract removeAttribute( String ): Object,removeAttribute( String ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.ExtensionPoint,ExtensionPoint,low,low,low,low,0,0,0,1,8,0,6,0,0,0,0,0,0,0,0,0,0,0,,,,6,,,,,,0,,,,,,
+org.junit.gen5.api.extension.ExtensionPoint.Position,Position,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+org.junit.gen5.api.extension.ExtensionRegistrar,ExtensionRegistrar,low,low,low,low,1,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.ExtensionRegistrar.public abstract registerExtensions( ExtensionRegistry ): void,registerExtensions( ExtensionRegistry ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.ExtensionRegistry,ExtensionRegistry,low,low,low,low,1,2,1,1,0,2,4,2,0,0,2,0,0,0,0.125,0,0,0,,,,4,,,,,,2,,,,,,
+"<Method>org.junit.gen5.api.extension.ExtensionRegistry.public register( E, Class ): void","register( E, Class ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,1,0
+"<Method>org.junit.gen5.api.extension.ExtensionRegistry.public abstract register( E, Class, Position ): void","register( E, Class, Position ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+org.junit.gen5.api.extension.Extensions,Extensions,low,low,low,low,1,1,0,1,0,1,6,1,0,0,1,0,0,0,0,0,0,0,,,,6,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.Extensions.public abstract value( ): ExtendWith,value( ): ExtendWith,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.extension.InstancePostProcessor,InstancePostProcessor,low,low,low,low,1,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.api.extension.InstancePostProcessor.public abstract postProcessTestInstance( TestExtensionContext ): void,postProcessTestInstance( TestExtensionContext ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.api.extension.MethodContext,MethodContext,low,low,low,low,0,2,0,1,1,2,3,2,0,0,2,0,0,0,0,0,0,0,,,,3,,,,,,2,,,,,,
+<Method>org.junit.gen5.api.extension.MethodContext.public abstract getInstance( ): Object,getInstance( ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.api.extension.MethodContext.public abstract getMethod( ): Method,getMethod( ): Method,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.api.extension.MethodParameterResolver,MethodParameterResolver,low,low,low,low,3,16,2,1,1,2,5,2,0,0,2,0,0,0,0,0,0,0,,,,5,,,,,,2,,,,,,
+"<Method>org.junit.gen5.api.extension.MethodParameterResolver.public resolve( Parameter, MethodContext, ExtensionContext ): Object","resolve( Parameter, MethodContext, ExtensionContext ): Object",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,2,0
+"<Method>org.junit.gen5.api.extension.MethodParameterResolver.public abstract supports( Parameter, MethodContext, ExtensionContext ): boolean","supports( Parameter, MethodContext, ExtensionContext ): boolean",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+org.junit.gen5.api.extension.ParameterResolutionException,ParameterResolutionException,medium-high,low,low,low,0,2,0,4,0,2,6,4,0,1,2,0,0,0,0.167,0,0,0,,,,6,,,,,,2,,,,,,
+<Method>org.junit.gen5.api.extension.ParameterResolutionException.public ParameterResolutionException( String ): void,ParameterResolutionException( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+"<Method>org.junit.gen5.api.extension.ParameterResolutionException.public ParameterResolutionException( String, Throwable ): void","ParameterResolutionException( String, Throwable ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,0,0
+<Field>org.junit.gen5.api.extension.ParameterResolutionException->serialVersionUID,static final serialVersionUID : long,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.commons.util,org.junit.gen5.commons.util,low,low,low-medium,low,,,,,,166,478,,,,,,,,,,,,10,10,0,478,25,0,0,0,1,166,,,,,,
+org.junit.gen5.commons.util.AnnotationUtils,AnnotationUtils,low-medium,low,low-medium,low,3,49,31,1,0,34,102,83,0,1,1,9,0,0,0.586,1,0,0,,,,102,,,,,,34,,,,,,
+org.junit.gen5.commons.util.AnnotationUtils.AnnotationCacheKey,AnnotationCacheKey,low,low,low,low,0,5,2,1,0,4,17,13,2,1,3,0,0,0.5,0.5,0,0,0,,,,17,,,,,,4,,,,,,
+<Method>org.junit.gen5.commons.util.AnnotationUtils.private AnnotationUtils( ): void,AnnotationUtils( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static findAnnotatedMethods( Class, Class, MethodSortOrder ): List","static findAnnotatedMethods( Class, Class, MethodSortOrder ): List",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,3,3,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static findAnnotation( AnnotatedElement, Class ): Optional","static findAnnotation( AnnotatedElement, Class ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.private static findAnnotation( AnnotatedElement, Class, Set ): Optional","static findAnnotation( AnnotatedElement, Class, Set ): Optional",low-medium,low,low-medium,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,4,33,3,27,5
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static findAnnotation( Optional, Class ): Optional","static findAnnotation( Optional, Class ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,5,2,4,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static findRepeatableAnnotations( AnnotatedElement, Class ): List","static findRepeatableAnnotations( AnnotatedElement, Class ): List",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.private static findRepeatableAnnotations( AnnotatedElement, Class, Set ): List","static findRepeatableAnnotations( AnnotatedElement, Class, Set ): List",low-medium,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,4,26,3,27,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static isAnnotated( AnnotatedElement, Class ): boolean","static isAnnotated( AnnotatedElement, Class ): boolean",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.AnnotationUtils.public static isAnnotated( Optional, Class ): boolean","static isAnnotated( Optional, Class ): boolean",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,2,0
+<Method>org.junit.gen5.commons.util.AnnotationUtils.public static isInJavaLangAnnotationPackage( Annotation ): boolean,static isInJavaLangAnnotationPackage( Annotation ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,4,0
+<Field>org.junit.gen5.commons.util.AnnotationUtils->annotationCache,static final annotationCache : Map,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.commons.util.ClasspathScanner,ClasspathScanner,low-medium,low,low-medium,low,1,41,34,1,0,21,78,73,2,2,11,1,0,0.708,0.583,0,0,0,,,,78,,,,,,21,,,,,,
+"<Method>org.junit.gen5.commons.util.ClasspathScanner. ClasspathScanner( Supplier, BiFunction ): void"," ClasspathScanner( Supplier, BiFunction ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,0,2
+<Method>org.junit.gen5.commons.util.ClasspathScanner. isPackage( String ): boolean, isPackage( String ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,1,4,1
+"<Method>org.junit.gen5.commons.util.ClasspathScanner. scanForClassesInClasspathRoot( File, Predicate ): List"," scanForClassesInClasspathRoot( File, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,6,0
+"<Method>org.junit.gen5.commons.util.ClasspathScanner. scanForClassesInPackage( String, Predicate ): List"," scanForClassesInPackage( String, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,4,1
+"<Method>org.junit.gen5.commons.util.ClasspathScanner.private allClassesInSourceDirs( List, String, Predicate ): List","allClassesInSourceDirs( List, String, Predicate ): List",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,3,2,0
+<Method>org.junit.gen5.commons.util.ClasspathScanner.private allSourceDirsForPackage( String ): List,allSourceDirsForPackage( String ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,14,1,9,2
+"<Method>org.junit.gen5.commons.util.ClasspathScanner.private appendPackageName( String, String ): String","appendPackageName( String, String ): String",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,5,2,1,0
+"<Method>org.junit.gen5.commons.util.ClasspathScanner.private collectClassesRecursively( File, String, List, Predicate ): void","collectClassesRecursively( File, String, List, Predicate ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,14,4,11,2
+"<Method>org.junit.gen5.commons.util.ClasspathScanner.private findClassesInSourceDirRecursively( File, String, Predicate ): List","findClassesInSourceDirRecursively( File, String, Predicate ): List",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,3,1,0
+"<Method>org.junit.gen5.commons.util.ClasspathScanner.private loadClassForClassFile( File, String ): Optional","loadClassForClassFile( File, String ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,7,3
+<Method>org.junit.gen5.commons.util.ClasspathScanner.private packagePath( String ): String,packagePath( String ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+<Method>org.junit.gen5.commons.util.ClasspathScanner.private static isClassFile( File ): boolean,static isClassFile( File ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,3,1
+<Field>org.junit.gen5.commons.util.ClasspathScanner->classLoaderSupplier,final classLoaderSupplier : Supplier,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.commons.util.ClasspathScanner->loadClass,final loadClass : BiFunction,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.commons.util.ClasspathScanner->CLASS_FILE_SUFFIX,static final CLASS_FILE_SUFFIX : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.commons.util.ClasspathScanner->LOG,static final LOG : Logger,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.commons.util.ObjectUtils,ObjectUtils,low,low,low,low,0,6,4,1,0,4,6,5,0,0,1,1,0,0,0.25,0,0,0,,,,6,,,,,,4,,,,,,
+<Method>org.junit.gen5.commons.util.ObjectUtils.private ObjectUtils( ): void,ObjectUtils( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.commons.util.ObjectUtils.public static nullSafeToString( Class ): String,static nullSafeToString( Class ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,4,1,4,0
+org.junit.gen5.commons.util.Preconditions,Preconditions,low,low,low,low,1,19,6,1,0,12,22,21,0,0,1,9,0,0,0.567,0,0,0,,,,22,,,,,,12,,,,,,
+<Method>org.junit.gen5.commons.util.Preconditions.private Preconditions( ): void,Preconditions( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static condition( boolean, String ): void","static condition( boolean, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,0,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static condition( boolean, Supplier ): void","static condition( boolean, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,2,1,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notBlank( String, String ): void","static notBlank( String, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notBlank( String, Supplier ): void","static notBlank( String, Supplier ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notEmpty( Collection, String ): void","static notEmpty( Collection, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notEmpty( String, String ): void","static notEmpty( String, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notEmpty( String, Supplier ): void","static notEmpty( String, Supplier ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notNull( Object, String ): void","static notNull( Object, String ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.commons.util.Preconditions.public static notNull( Object, Supplier ): void","static notNull( Object, Supplier ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+org.junit.gen5.commons.util.ReflectionUtils,ReflectionUtils,medium-high,low,low-medium,high,2,129,78,1,0,66,213,203,0,0,1,33,0,0,0.812,0,0,0,,,,213,,,,,,66,,,,,,
+org.junit.gen5.commons.util.ReflectionUtils.MethodSortOrder,MethodSortOrder,low,low,low,low,0,0,0,2,0,0,2,0,0,2,0,0,0,0,0,0,0,0,,,,2,,,,,,0,,,,,,
+org.junit.gen5.commons.util.ReflectionUtils.TargetExceptionWrapper,TargetExceptionWrapper,low,low,low,low,0,2,0,4,0,2,7,4,1,1,2,0,0,1,0.25,0,0,0,,,,7,,,,,,2,,,,,,
+<Method>org.junit.gen5.commons.util.ReflectionUtils.private ReflectionUtils( ): void,ReflectionUtils( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findAllClassesInClasspathRoot( File, Predicate ): List","static findAllClassesInClasspathRoot( File, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findAllClassesInPackage( String, Predicate ): List","static findAllClassesInPackage( String, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findAllMethodsInHierarchy( Class, MethodSortOrder ): List","static findAllMethodsInHierarchy( Class, MethodSortOrder ): List",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,19,2,19,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findMethod( Class, String, Class ): Optional","static findMethod( Class, String, Class ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,5,3,5,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findMethods( Class, Predicate ): List","static findMethods( Class, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findMethods( Class, Predicate, MethodSortOrder ): List","static findMethods( Class, Predicate, MethodSortOrder ): List",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,3,8,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static findNestedClasses( Class, Predicate ): List","static findNestedClasses( Class, Predicate ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,7,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static getAllClasspathRootDirectories( ): Set,static getAllClasspathRootDirectories( ): Set,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,0,8,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static getDefaultClassLoader( ): ClassLoader,static getDefaultClassLoader( ): ClassLoader,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,0,3,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.private static getInterfaceMethods( Class, MethodSortOrder ): List","static getInterfaceMethods( Class, MethodSortOrder ): List",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,16,2,16,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static getOuterInstance( Object ): Optional,static getOuterInstance( Object ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,9,1,6,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static getOuterInstance( Object, Class ): Optional","static getOuterInstance( Object, Class ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,8,2,7,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.private static getSuperclassMethods( Class, MethodSortOrder ): List","static getSuperclassMethods( Class, MethodSortOrder ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,2,4,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.private static handleException( Throwable ): void,static handleException( Throwable ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,2,16,1,2,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static invokeMethod( Method, Object, Object ): Object","static invokeMethod( Method, Object, Object ): Object",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,10,3,7,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isAbstract( Class ): boolean,static isAbstract( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isAbstract( Member ): boolean,static isAbstract( Member ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.private static isMethodShadowedBy( Method, Method ): boolean","static isMethodShadowedBy( Method, Method ): boolean",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,11,2,6,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.private static isMethodShadowedByLocalMethods( Method, List ): boolean","static isMethodShadowedByLocalMethods( Method, List ): boolean",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isPackage( String ): boolean,static isPackage( String ): boolean,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isPrivate( Class ): boolean,static isPrivate( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isPrivate( Member ): boolean,static isPrivate( Member ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isPublic( Class ): boolean,static isPublic( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isPublic( Member ): boolean,static isPublic( Member ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isStatic( Class ): boolean,static isStatic( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static isStatic( Member ): boolean,static isStatic( Member ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static loadClass( String ): Optional,static loadClass( String ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static loadClass( String, Class ): Optional","static loadClass( String, Class ): Optional",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static loadClass( String, Class, ClassLoader ): Optional","static loadClass( String, Class, ClassLoader ): Optional",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,14,3,9,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static loadClass( String, ClassLoader ): Optional","static loadClass( String, ClassLoader ): Optional",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,2,6,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.public static loadMethod( String ): Optional,static loadMethod( String ): Optional,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,4,13,1,11,0
+<Method>org.junit.gen5.commons.util.ReflectionUtils.private static makeAccessible( AccessibleObject ): void,static makeAccessible( AccessibleObject ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,3,1,2,0
+"<Method>org.junit.gen5.commons.util.ReflectionUtils.public static newInstance( Class, Object ): T","static newInstance( Class, Object ): T",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,10,2,8,0
+org.junit.gen5.commons.util.StringUtils,StringUtils,low,low,low,low,0,8,5,1,0,5,10,9,0,0,1,4,0,0,0.4,0,0,0,,,,10,,,,,,5,,,,,,
+<Method>org.junit.gen5.commons.util.StringUtils.private StringUtils( ): void,StringUtils( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+<Method>org.junit.gen5.commons.util.StringUtils.public static isBlank( String ): boolean,static isBlank( String ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.commons.util.StringUtils.public static isEmpty( CharSequence ): boolean,static isEmpty( CharSequence ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+<Method>org.junit.gen5.commons.util.StringUtils.public static isNotBlank( String ): boolean,static isNotBlank( String ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+<Method>org.junit.gen5.commons.util.StringUtils.public static isNotEmpty( CharSequence ): boolean,static isNotEmpty( CharSequence ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+org.junit.gen5.commons.util.ToStringBuilder,ToStringBuilder,low,low,low,low,1,34,25,1,0,18,47,44,2,0,6,0,0,0.5,0.5,0.333,0,0,,,,47,,,,,,18,,,,,,
+<Method>org.junit.gen5.commons.util.ToStringBuilder.public ToStringBuilder( Class ): void,ToStringBuilder( Class ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.commons.util.ToStringBuilder.public ToStringBuilder( Object ): void,ToStringBuilder( Object ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,1
+"<Method>org.junit.gen5.commons.util.ToStringBuilder.public append( String, Object ): ToStringBuilder","append( String, Object ): ToStringBuilder",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,3,1
+<Method>org.junit.gen5.commons.util.ToStringBuilder.private arrayToString( Object ): String,arrayToString( Object ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,3,19,1,12,0
+<Method>org.junit.gen5.commons.util.ToStringBuilder.public toString( ): String,toString( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,0,9,2
+<Method>org.junit.gen5.commons.util.ToStringBuilder.private toString( Object ): String,toString( Object ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,2,8,1,4,0
+<Field>org.junit.gen5.commons.util.ToStringBuilder->type,final type : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.commons.util.ToStringBuilder->values,final values : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.console,org.junit.gen5.console,low,low,low,low,,,,,,6,21,,,,,,,,,,,,1,1,0,21,0,1,0,1,0,6,,,,,,
+org.junit.gen5.console.ConsoleRunner,ConsoleRunner,low,low-medium,low,low-medium,7,19,7,1,0,6,21,18,2,0,4,1,0,0.333,0.633,0,1,0,,,,21,,,,,,6,,,,,,
+"<Method>org.junit.gen5.console.ConsoleRunner. ConsoleRunner( CommandLineOptionsParser, ConsoleTaskExecutor ): void"," ConsoleRunner( CommandLineOptionsParser, ConsoleTaskExecutor ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.console.ConsoleRunner. displayHelp( PrintWriter ): void, displayHelp( PrintWriter ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,1
+<Method>org.junit.gen5.console.ConsoleRunner. execute( String ): int, execute( String ): int,low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,3,2
+<Method>org.junit.gen5.console.ConsoleRunner.private determineTask( CommandLineOptions ): ConsoleTask,determineTask( CommandLineOptions ): ConsoleTask,low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,4,1,1,1
+<Method>org.junit.gen5.console.ConsoleRunner.public static main( String ): void,static main( String ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,1,2,0
+<Field>org.junit.gen5.console.ConsoleRunner->commandLineOptionsParser,final commandLineOptionsParser : CommandLineOptionsParser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.ConsoleRunner->consoleTaskExecutor,final consoleTaskExecutor : ConsoleTaskExecutor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.console.options,org.junit.gen5.console.options,low,low,low,low,,,,,,27,124,,,,,,,,,,,,4,3,1,124,3,0,0.25,0,0.75,27,,,,,,
+org.junit.gen5.console.options.AvailableOptions,AvailableOptions,low,low,low-medium,low,0,2,1,1,0,1,53,26,0,0,1,0,0,0,0,0,0,0,,,,53,,,,,,1,,,,,,
+<Method>org.junit.gen5.console.options.AvailableOptions. AvailableOptions( ): void, AvailableOptions( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,26,0,9,0
+org.junit.gen5.console.options.CommandLineOptions,CommandLineOptions,low,low,low-medium,low-medium,0,21,1,1,0,20,51,40,10,0,20,0,0,0.947,0.625,0.947,0,0,,,,51,,,,,,20,,,,,,
+<Method>org.junit.gen5.console.options.CommandLineOptions.public getAdditionalClasspathEntries( ): List,getAdditionalClasspathEntries( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public getArguments( ): List,getArguments( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public getClassnameFilter( ): Optional,getClassnameFilter( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public getExcludeTags( ): List,getExcludeTags( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public getTagsFilter( ): List,getTagsFilter( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public isAnsiColorOutputDisabled( ): boolean,isAnsiColorOutputDisabled( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public isDisplayHelp( ): boolean,isDisplayHelp( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public isExitCodeEnabled( ): boolean,isExitCodeEnabled( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public isHideDetails( ): boolean,isHideDetails( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public isRunAllTests( ): boolean,isRunAllTests( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setAdditionalClasspathEntries( List ): void,setAdditionalClasspathEntries( List ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setAnsiColorOutputDisabled( boolean ): void,setAnsiColorOutputDisabled( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setArguments( List ): void,setArguments( List ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setClassnameFilter( String ): void,setClassnameFilter( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setDisplayHelp( boolean ): void,setDisplayHelp( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setExcludeTags( List ): void,setExcludeTags( List ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setExitCodeEnabled( boolean ): void,setExitCodeEnabled( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setHideDetails( boolean ): void,setHideDetails( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setRunAllTests( boolean ): void,setRunAllTests( boolean ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.options.CommandLineOptions.public setTagsFilter( List ): void,setTagsFilter( List ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Field>org.junit.gen5.console.options.CommandLineOptions->additionalClasspathEntries,additionalClasspathEntries : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->ansiColorOutputDisabled,ansiColorOutputDisabled : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->arguments,arguments : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->classnameFilter,classnameFilter : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->displayHelp,displayHelp : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->excludeTags,excludeTags : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->exitCodeEnabled,exitCodeEnabled : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->hideDetails,hideDetails : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->runAllTests,runAllTests : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.options.CommandLineOptions->tagsFilter,tagsFilter : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.options.CommandLineOptionsParser,CommandLineOptionsParser,low,low,low,low,1,2,0,1,1,2,3,2,0,0,2,0,0,0,0.333,0,0,0,,,,3,,,,,,2,,,,,,
+<Method>org.junit.gen5.console.options.CommandLineOptionsParser.public abstract parse( String ): CommandLineOptions,parse( String ): CommandLineOptions,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Method>org.junit.gen5.console.options.CommandLineOptionsParser.public abstract printHelp( Writer ): void,printHelp( Writer ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.console.options.JOptSimpleCommandLineOptionsParser,JOptSimpleCommandLineOptionsParser,low,low,low,low,2,3,1,1,0,4,17,16,0,0,3,0,0,0,0.444,0,0,0,,,,17,,,,,,4,,,,,,
+<Method>org.junit.gen5.console.options.JOptSimpleCommandLineOptionsParser.private getAvailableOptions( ): AvailableOptions,getAvailableOptions( ): AvailableOptions,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,0
+<Method>org.junit.gen5.console.options.JOptSimpleCommandLineOptionsParser.public parse( String ): CommandLineOptions,parse( String ): CommandLineOptions,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,1,0
+<Method>org.junit.gen5.console.options.JOptSimpleCommandLineOptionsParser.public printHelp( Writer ): void,printHelp( Writer ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,8,1,1,0
+<Package>org.junit.gen5.console.tasks,org.junit.gen5.console.tasks,low,low,low-medium,low,,,,,,47,175,,,,,,,,,,,,8,7,1,175,1,3,0.125,0.75,0.125,47,,,,,,
+org.junit.gen5.console.tasks.ClasspathEntriesParser,ClasspathEntriesParser,low,low,low,low,0,8,6,1,0,3,13,11,0,1,2,0,0,0,0.333,0,0,0,,,,13,,,,,,3,,,,,,
+<Method>org.junit.gen5.console.tasks.ClasspathEntriesParser. toURLs( List ): URL, toURLs( List ): URL,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,5,0
+<Method>org.junit.gen5.console.tasks.ClasspathEntriesParser.private toURL( String ): URL,toURL( String ): URL,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Field>org.junit.gen5.console.tasks.ClasspathEntriesParser->PATH_SEPARATOR_PATTERN,static final PATH_SEPARATOR_PATTERN : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.ColoredPrintingTestListener,ColoredPrintingTestListener,low,low,low-medium,medium-high,4,23,15,1,0,17,67,48,2,0,13,0,0,0.333,0.748,0.933,0,0,,,,67,,,,,,17,,,,,,
+org.junit.gen5.console.tasks.ColoredPrintingTestListener.Color,Color,low,low,low,low,0,2,0,2,0,2,16,5,1,9,2,0,0,1.8,0.25,0,0,0,,,,16,,,,,,2,,,,,,
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener. ColoredPrintingTestListener( PrintWriter, boolean ): void"," ColoredPrintingTestListener( PrintWriter, boolean ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private determineColor( Status ): Color,determineColor( Status ): Color,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,2,10,1,0,0
+<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public dynamicTestRegistered( TestIdentifier ): void,dynamicTestRegistered( TestIdentifier ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public executionFinished( TestIdentifier, TestExecutionResult ): void","executionFinished( TestIdentifier, TestExecutionResult ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,5,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public executionSkipped( TestIdentifier, String ): void","executionSkipped( TestIdentifier, String ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,2,0
+<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public executionStarted( TestIdentifier ): void,executionStarted( TestIdentifier ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private println( Color, String ): void","println( Color, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,2,2,3
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private println( Color, String, Object ): void","println( Color, String, Object ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,2,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private printlnException( Color, Throwable ): void","printlnException( Color, Throwable ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,2,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private printlnMessage( Color, String, String ): void","printlnMessage( Color, String, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,0
+"<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.private printlnTestDescriptor( Color, String, TestIdentifier ): void","printlnTestDescriptor( Color, String, TestIdentifier ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,3,0
+<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public testPlanExecutionFinished( TestPlan ): void,testPlanExecutionFinished( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.console.tasks.ColoredPrintingTestListener.public testPlanExecutionStarted( TestPlan ): void,testPlanExecutionStarted( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,2,1
+<Field>org.junit.gen5.console.tasks.ColoredPrintingTestListener->disableAnsiColors,final disableAnsiColors : boolean,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.tasks.ColoredPrintingTestListener->out,final out : PrintWriter,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.ConsoleTask,ConsoleTask,low,low,low,low,0,1,0,1,2,1,3,1,0,1,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+<Method>org.junit.gen5.console.tasks.ConsoleTask.public abstract execute( PrintWriter ): int,execute( PrintWriter ): int,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Field>org.junit.gen5.console.tasks.ConsoleTask->SUCCESS,static final SUCCESS : int,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.ConsoleTaskExecutor,ConsoleTaskExecutor,low,low,low,low,1,10,8,1,0,6,25,22,2,0,4,0,0,0.5,0.583,0,0,0,,,,25,,,,,,6,,,,,,
+"<Method>org.junit.gen5.console.tasks.ConsoleTaskExecutor.public ConsoleTaskExecutor( PrintStream, PrintStream ): void","ConsoleTaskExecutor( PrintStream, PrintStream ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+"<Method>org.junit.gen5.console.tasks.ConsoleTaskExecutor.public executeTask( ConsoleTask, Consumer ): int","executeTask( ConsoleTask, Consumer ): int",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,10,2,4,1
+<Method>org.junit.gen5.console.tasks.ConsoleTaskExecutor.private printException( Exception ): void,printException( Exception ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,2
+"<Method>org.junit.gen5.console.tasks.ConsoleTaskExecutor.private printHelp( Consumer, PrintWriter ): void","printHelp( Consumer, PrintWriter ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,2,3,1
+<Field>org.junit.gen5.console.tasks.ConsoleTaskExecutor->err,final err : PrintStream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.tasks.ConsoleTaskExecutor->out,final out : PrintStream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.CustomContextClassLoaderExecutor,CustomContextClassLoaderExecutor,low,low,low,low,0,9,7,1,0,4,16,14,1,0,3,0,0,0,0.417,0,0,0,,,,16,,,,,,4,,,,,,
+<Method>org.junit.gen5.console.tasks.CustomContextClassLoaderExecutor. CustomContextClassLoaderExecutor( Optional ): void, CustomContextClassLoaderExecutor( Optional ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.tasks.CustomContextClassLoaderExecutor. invoke( Callable ): T, invoke( Callable ): T,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,4,1,4,2
+"<Method>org.junit.gen5.console.tasks.CustomContextClassLoaderExecutor.private replaceThreadContextClassLoaderAndInvoke( ClassLoader, Callable ): T","replaceThreadContextClassLoaderAndInvoke( ClassLoader, Callable ): T",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,8,2,7,0
+<Field>org.junit.gen5.console.tasks.CustomContextClassLoaderExecutor->customClassLoader,final customClassLoader : Optional,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.DisplayHelpTask,DisplayHelpTask,low,low,low,low,1,3,1,1,0,2,8,6,1,0,2,0,0,0,0.333,0,0,0,,,,8,,,,,,2,,,,,,
+<Method>org.junit.gen5.console.tasks.DisplayHelpTask.public DisplayHelpTask( CommandLineOptionsParser ): void,DisplayHelpTask( CommandLineOptionsParser ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.console.tasks.DisplayHelpTask.public execute( PrintWriter ): int,execute( PrintWriter ): int,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,1,1
+<Field>org.junit.gen5.console.tasks.DisplayHelpTask->parser,final parser : CommandLineOptionsParser,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.console.tasks.ExecuteTestsTask,ExecuteTestsTask,low-medium,low-medium,low,low-medium,10,73,24,1,0,12,43,40,2,0,8,0,0,0.4,0.625,1,2,0,,,,43,,,,,,12,,,,,,
+"<Method>org.junit.gen5.console.tasks.ExecuteTestsTask. ExecuteTestsTask( CommandLineOptions, Supplier ): void"," ExecuteTestsTask( CommandLineOptions, Supplier ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.public ExecuteTestsTask( CommandLineOptions ): void,ExecuteTestsTask( CommandLineOptions ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.private computeExitCode( TestExecutionSummary ): int,computeExitCode( TestExecutionSummary ): int,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,3,1
+<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.private createCustomClassLoader( ): Optional,createCustomClassLoader( ): Optional,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,8,0,7,1
+<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.public execute( PrintWriter ): int,execute( PrintWriter ): int,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,0
+<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.private executeTests( PrintWriter ): int,executeTests( PrintWriter ): int,low,low-medium,low,low,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,8,1,7,2
+"<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.private printSummary( TestExecutionSummary, PrintWriter ): void","printSummary( TestExecutionSummary, PrintWriter ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,4,2,3,1
+"<Method>org.junit.gen5.console.tasks.ExecuteTestsTask.private registerListeners( PrintWriter, Launcher ): SummaryGeneratingListener","registerListeners( PrintWriter, Launcher ): SummaryGeneratingListener",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,2,4,2
+<Field>org.junit.gen5.console.tasks.ExecuteTestsTask->launcherSupplier,final launcherSupplier : Supplier,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.console.tasks.ExecuteTestsTask->options,final options : CommandLineOptions,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine,org.junit.gen5.engine,low,medium-high,medium-high,low,,,,,,86,324,,,,,,,,,,,,26,17,9,324,12,15,0.423,0.556,0.021,86,,,,,,
+org.junit.gen5.engine.AbstractTestDescriptor,AbstractTestDescriptor,low-medium,low,low-medium,medium-high,3,43,24,1,3,22,71,66,4,0,16,0,0,0.795,0.75,0.897,0,0,,,,71,,,,,,22,,,,,,
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.protected AbstractTestDescriptor( String ): void,AbstractTestDescriptor( String ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public accept( Visitor ): void,accept( Visitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,1,3,0
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public addChild( TestDescriptor ): void,addChild( TestDescriptor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,1,3,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public final equals( Object ): boolean,final equals( Object ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,1,5,0
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public final getUniqueId( ): String,final getUniqueId( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public final hashCode( ): int,final hashCode( ): int,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public final setParent( TestDescriptor ): void,final setParent( TestDescriptor ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.protected final setSource( TestSource ): void,final setSource( TestSource ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public findByUniqueId( String ): Optional,findByUniqueId( String ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,9,1,6,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public getChildren( ): Set,getChildren( ): Set,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public getParent( ): Optional,getParent( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public getSource( ): Optional,getSource( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public getTags( ): Set,getTags( ): Set,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,0
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public removeChild( TestDescriptor ): void,removeChild( TestDescriptor ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,2,1
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.protected removeFromHierarchy( ): void,removeFromHierarchy( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,0,3,2
+<Method>org.junit.gen5.engine.AbstractTestDescriptor.public toString( ): String,toString( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,3,0
+<Field>org.junit.gen5.engine.AbstractTestDescriptor->children,final children : Set,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.AbstractTestDescriptor->uniqueId,final uniqueId : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.AbstractTestDescriptor->parent,parent : TestDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.AbstractTestDescriptor->source,source : TestSource,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.AllTestsSpecification,AllTestsSpecification,low,low,low,low,1,3,1,1,0,2,7,5,1,0,2,0,0,0,0.333,0,0,0,,,,7,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.AllTestsSpecification.public AllTestsSpecification( File ): void,AllTestsSpecification( File ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.AllTestsSpecification.public accept( TestPlanSpecificationElementVisitor ): void,accept( TestPlanSpecificationElementVisitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Field>org.junit.gen5.engine.AllTestsSpecification->classpathRoot,final classpathRoot : File,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.ClassFilter,ClassFilter,low,low,low,low,0,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.engine.ClassFilter.public abstract acceptClass( Class ): boolean,acceptClass( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.engine.ClassNameFilter,ClassNameFilter,low,low,low,low,0,5,2,1,0,3,10,8,1,0,3,0,0,0,0.444,0,0,0,,,,10,,,,,,3,,,,,,
+<Method>org.junit.gen5.engine.ClassNameFilter.public ClassNameFilter( String ): void,ClassNameFilter( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.ClassNameFilter.public acceptClass( Class ): boolean,acceptClass( Class ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,1
+<Method>org.junit.gen5.engine.ClassNameFilter.public getDescription( ): String,getDescription( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Field>org.junit.gen5.engine.ClassNameFilter->regex,final regex : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.ClassSpecification,ClassSpecification,low,low,low,low,1,3,1,1,0,2,7,5,1,0,2,0,0,0,0.333,0,0,0,,,,7,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.ClassSpecification.public ClassSpecification( Class ): void,ClassSpecification( Class ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.ClassSpecification.public accept( TestPlanSpecificationElementVisitor ): void,accept( TestPlanSpecificationElementVisitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Field>org.junit.gen5.engine.ClassSpecification->testClass,final testClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.Container<C>,Container,low,low,low,low,0,2,0,1,2,2,5,2,0,0,2,0,0,0,0,0,0,0,,,,5,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.Container<C>.public afterAll( C ): C,afterAll( C ): C,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Method>org.junit.gen5.engine.Container<C>.public beforeAll( C ): C,beforeAll( C ): C,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.engine.EngineAwareTestDescriptor,EngineAwareTestDescriptor,low,low,low,low,1,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.engine.EngineAwareTestDescriptor.public abstract getEngine( ): TestEngine,getEngine( ): TestEngine,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.engine.EngineDescriptor,EngineDescriptor,low-medium,low,low,low,1,6,1,2,1,5,17,15,1,0,5,0,0,0,0.4,0.7,0,0,,,,17,,,,,,5,,,,,,
+<Method>org.junit.gen5.engine.EngineDescriptor.public EngineDescriptor( TestEngine ): void,EngineDescriptor( TestEngine ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.engine.EngineDescriptor.public final isTest( ): boolean,final isTest( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.EngineDescriptor.public getDisplayName( ): String,getDisplayName( ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.EngineDescriptor.public getEngine( ): TestEngine,getEngine( ): TestEngine,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.EngineDescriptor.public isContainer( ): boolean,isContainer( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Field>org.junit.gen5.engine.EngineDescriptor->engine,final engine : TestEngine,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.EngineExecutionContext,EngineExecutionContext,low,low,low,low,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,,,,1,,,,,,0,,,,,,
+org.junit.gen5.engine.EngineExecutionListener,EngineExecutionListener,low,low,low,low,2,4,0,1,0,4,5,4,0,0,4,0,0,0,0.375,0,0,0,,,,5,,,,,,4,,,,,,
+<Method>org.junit.gen5.engine.EngineExecutionListener.public abstract dynamicTestRegistered( TestDescriptor ): void,dynamicTestRegistered( TestDescriptor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+"<Method>org.junit.gen5.engine.EngineExecutionListener.public abstract executionFinished( TestDescriptor, TestExecutionResult ): void","executionFinished( TestDescriptor, TestExecutionResult ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,0,0
+"<Method>org.junit.gen5.engine.EngineExecutionListener.public abstract executionSkipped( TestDescriptor, String ): void","executionSkipped( TestDescriptor, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,0,0
+<Method>org.junit.gen5.engine.EngineExecutionListener.public abstract executionStarted( TestDescriptor ): void,executionStarted( TestDescriptor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.engine.EngineFilter,EngineFilter,low,low,low,low,0,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.engine.EngineFilter.public abstract getDescription( ): String,getDescription( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,0,0,0
+org.junit.gen5.engine.ExecutionRequest,ExecutionRequest,low,low,low,low,2,4,0,1,0,4,13,9,3,0,4,0,0,0.778,0.5,0.667,0,0,,,,13,,,,,,4,,,,,,
+"<Method>org.junit.gen5.engine.ExecutionRequest.public ExecutionRequest( TestDescriptor, EngineExecutionListener ): void","ExecutionRequest( TestDescriptor, EngineExecutionListener ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.engine.ExecutionRequest.public getAttributes( ): Map,getAttributes( ): Map,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.ExecutionRequest.public getEngineExecutionListener( ): EngineExecutionListener,getEngineExecutionListener( ): EngineExecutionListener,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.ExecutionRequest.public getRootTestDescriptor( ): TestDescriptor,getRootTestDescriptor( ): TestDescriptor,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Field>org.junit.gen5.engine.ExecutionRequest->attributes,final attributes : Map,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.ExecutionRequest->engineExecutionListener,final engineExecutionListener : EngineExecutionListener,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.ExecutionRequest->rootTestDescriptor,final rootTestDescriptor : TestDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.FileSystemSource,FileSystemSource,low,low,low,low,0,13,5,1,0,9,37,24,2,0,9,0,0,0.5,0.556,0.806,0,0,,,,37,,,,,,9,,,,,,
+org.junit.gen5.engine.FileSystemSource.FilePosition,FilePosition,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+<Method>org.junit.gen5.engine.FileSystemSource.public FileSystemSource( File ): void,FileSystemSource( File ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+"<Method>org.junit.gen5.engine.FileSystemSource.public FileSystemSource( File, FilePosition ): void","FileSystemSource( File, FilePosition ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.engine.FileSystemSource.public getFile( ): Optional,getFile( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,1
+<Method>org.junit.gen5.engine.FileSystemSource.public getPosition( ): Optional,getPosition( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,1
+<Method>org.junit.gen5.engine.FileSystemSource.public isDirectory( ): boolean,isDirectory( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,3,1
+<Method>org.junit.gen5.engine.FileSystemSource.public isFile( ): boolean,isFile( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,3,1
+<Method>org.junit.gen5.engine.FileSystemSource.public isFilePosition( ): boolean,isFilePosition( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,2,0
+<Method>org.junit.gen5.engine.FileSystemSource.public isJavaClass( ): boolean,isJavaClass( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.FileSystemSource.public isJavaMethod( ): boolean,isJavaMethod( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Field>org.junit.gen5.engine.FileSystemSource->positionInFile,final positionInFile : FilePosition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.FileSystemSource->sourceFileOrDirectory,final sourceFileOrDirectory : File,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.HierarchicalTestEngine<C>,HierarchicalTestEngine,low,low,low,low,2,14,2,1,1,2,5,4,0,0,2,0,0,0,0,0,0,0,,,,5,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.HierarchicalTestEngine<C>.protected abstract createExecutionContext( ExecutionRequest ): C,abstract createExecutionContext( ExecutionRequest ): C,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,-2147483648,1,1,0,0
+<Method>org.junit.gen5.engine.HierarchicalTestEngine<C>.public final execute( ExecutionRequest ): void,final execute( ExecutionRequest ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,0
+org.junit.gen5.engine.HierarchicalTestExecutor<C>,HierarchicalTestExecutor,low,low-medium,low,low,8,15,11,1,0,6,48,27,5,0,3,0,0,0.7,0.417,0,1,0,,,,48,,,,,,6,,,,,,
+org.junit.gen5.engine.HierarchicalTestExecutor.MixinAdapter<C>,MixinAdapter,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+"<Method>org.junit.gen5.engine.HierarchicalTestExecutor<C>. HierarchicalTestExecutor( ExecutionRequest, C ): void"," HierarchicalTestExecutor( ExecutionRequest, C ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,2,3
+<Method>org.junit.gen5.engine.HierarchicalTestExecutor<C>. execute( ): void, execute( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,2
+"<Method>org.junit.gen5.engine.HierarchicalTestExecutor<C>.private executeAll( TestDescriptor, C ): void","executeAll( TestDescriptor, C ): void",low,low-medium,low,low,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,21,2,10,8
+<Field>org.junit.gen5.engine.HierarchicalTestExecutor<C>->adapter,final adapter : MixinAdapter,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.HierarchicalTestExecutor<C>->listener,final listener : EngineExecutionListener,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.HierarchicalTestExecutor<C>->rootContext,final rootContext : C,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.HierarchicalTestExecutor<C>->rootTestDescriptor,final rootTestDescriptor : TestDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.HierarchicalTestExecutor<C>->singleTestExecutor,final singleTestExecutor : SingleTestExecutor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.JavaSource,JavaSource,low,low,low,low,0,14,6,1,0,10,37,34,2,0,10,0,0,0.3,0.6,0.711,0,0,,,,37,,,,,,10,,,,,,
+<Method>org.junit.gen5.engine.JavaSource.public JavaSource( Class ): void,JavaSource( Class ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,2
+<Method>org.junit.gen5.engine.JavaSource.public JavaSource( Method ): void,JavaSource( Method ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,2
+<Method>org.junit.gen5.engine.JavaSource.public getJavaClass( ): Optional,getJavaClass( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,1
+<Method>org.junit.gen5.engine.JavaSource.public getJavaMethod( ): Optional,getJavaMethod( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,1
+<Method>org.junit.gen5.engine.JavaSource.public isDirectory( ): boolean,isDirectory( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.JavaSource.public isFile( ): boolean,isFile( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.JavaSource.public isFilePosition( ): boolean,isFilePosition( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.JavaSource.public isJavaClass( ): boolean,isJavaClass( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,2
+<Method>org.junit.gen5.engine.JavaSource.public isJavaMethod( ): boolean,isJavaMethod( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.JavaSource.public toString( ): String,toString( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,9,0,5,0
+<Field>org.junit.gen5.engine.JavaSource->javaClass,final javaClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.JavaSource->javaMethod,final javaMethod : Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.Leaf<C>,Leaf,low,low,low,low,0,1,0,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,,,,2,,,,,,1,,,,,,
+<Method>org.junit.gen5.engine.Leaf<C>.public abstract execute( C ): C,execute( C ): C,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.engine.MethodSpecification,MethodSpecification,low,low,low,low,1,3,1,1,0,2,9,6,2,0,2,0,0,0,0.375,0,0,0,,,,9,,,,,,2,,,,,,
+"<Method>org.junit.gen5.engine.MethodSpecification.public MethodSpecification( Class, Method ): void","MethodSpecification( Class, Method ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.engine.MethodSpecification.public accept( TestPlanSpecificationElementVisitor ): void,accept( TestPlanSpecificationElementVisitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,2
+<Field>org.junit.gen5.engine.MethodSpecification->testClass,final testClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.MethodSpecification->testMethod,final testMethod : Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.Node<C>,Node,low,low,low,low,0,2,0,1,2,2,19,2,0,0,2,0,0,0,0,0,0,0,,,,19,,,,,,2,,,,,,
+org.junit.gen5.engine.Node.SkipResult,SkipResult,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+<Method>org.junit.gen5.engine.Node<C>.public prepare( C ): C,prepare( C ): C,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+<Method>org.junit.gen5.engine.Node<C>.public shouldBeSkipped( C ): SkipResult,shouldBeSkipped( C ): SkipResult,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,1,0,0
+org.junit.gen5.engine.PackageSpecification,PackageSpecification,low,low,low,low,1,3,1,1,0,2,7,5,1,0,2,0,0,0,0.333,0,0,0,,,,7,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.PackageSpecification.public PackageSpecification( String ): void,PackageSpecification( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.PackageSpecification.public accept( TestPlanSpecificationElementVisitor ): void,accept( TestPlanSpecificationElementVisitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Field>org.junit.gen5.engine.PackageSpecification->packageName,final packageName : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.SingleTestExecutor,SingleTestExecutor,low,low,low,low,1,4,3,1,0,3,11,8,0,0,1,0,0,0,0,0,0,0,,,,11,,,,,,3,,,,,,
+org.junit.gen5.engine.SingleTestExecutor.TestExecutable,TestExecutable,low,low,low,low,0,0,0,1,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+<Method>org.junit.gen5.engine.SingleTestExecutor. executeSafely( TestExecutable ): TestExecutionResult, executeSafely( TestExecutable ): TestExecutionResult,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,1,3,0
+org.junit.gen5.engine.UniqueIdSpecification,UniqueIdSpecification,low,low,low,low,1,3,1,1,0,2,7,5,1,0,2,0,0,0,0.333,0,0,0,,,,7,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.UniqueIdSpecification.public UniqueIdSpecification( String ): void,UniqueIdSpecification( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.UniqueIdSpecification.public accept( TestPlanSpecificationElementVisitor ): void,accept( TestPlanSpecificationElementVisitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Field>org.junit.gen5.engine.UniqueIdSpecification->uniqueId,final uniqueId : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine.junit4,org.junit.gen5.engine.junit4,low,low,low,low,,,,,,10,27,,,,,,,,,,,,3,3,0,27,0,3,0,1,0,10,,,,,,
+org.junit.gen5.engine.junit4.IsJUnit4TestMethod,IsJUnit4TestMethod,low,low,low,low,1,7,3,1,0,3,8,7,0,0,1,0,0,0,0,0,0,0,,,,8,,,,,,3,,,,,,
+<Method>org.junit.gen5.engine.junit4.IsJUnit4TestMethod.public test( Method ): boolean,test( Method ): boolean,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,7,1,3,0
+org.junit.gen5.engine.junit4.IsPotentialJUnit4TestClass,IsPotentialJUnit4TestClass,low,low,low,low,1,8,4,1,0,4,10,9,0,0,1,0,0,0,0,0,0,0,,,,10,,,,,,4,,,,,,
+<Method>org.junit.gen5.engine.junit4.IsPotentialJUnit4TestClass.public test( Class ): boolean,test( Class ): boolean,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,1,9,1,4,0
+org.junit.gen5.engine.junit4.JUnit4TestEngine,JUnit4TestEngine,low,low,low,low,4,3,0,1,0,3,9,8,0,0,3,0,0,0,0.444,0,0,0,,,,9,,,,,,3,,,,,,
+<Method>org.junit.gen5.engine.junit4.JUnit4TestEngine.public discoverTests( TestPlanSpecification ): EngineAwareTestDescriptor,discoverTests( TestPlanSpecification ): EngineAwareTestDescriptor,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,0
+<Method>org.junit.gen5.engine.junit4.JUnit4TestEngine.public execute( ExecutionRequest ): void,execute( ExecutionRequest ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.engine.junit4.JUnit4TestEngine.public getId( ): String,getId( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Package>org.junit.gen5.engine.junit5,org.junit.gen5.engine.junit5,low,low,low,low,,,,,,9,30,,,,,,,,,,,,1,1,0,30,0,1,0,1,0,9,,,,,,
+org.junit.gen5.engine.junit5.JUnit5TestEngine,JUnit5TestEngine,low-medium,low-medium,low,low,9,17,8,2,0,9,30,28,0,1,5,0,1,0,0.56,1,0,0.4,,,,30,,,,,,9,,,,,,
+"<Method>org.junit.gen5.engine.junit5.JUnit5TestEngine.private applyEngineFilters( List, JUnit5EngineDescriptor ): void","applyEngineFilters( List, JUnit5EngineDescriptor ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,3,11,2,3,0
+<Method>org.junit.gen5.engine.junit5.JUnit5TestEngine.protected createExecutionContext( ExecutionRequest ): JUnit5EngineExecutionContext,createExecutionContext( ExecutionRequest ): JUnit5EngineExecutionContext,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,0
+<Method>org.junit.gen5.engine.junit5.JUnit5TestEngine.public discoverTests( TestPlanSpecification ): JUnit5EngineDescriptor,discoverTests( TestPlanSpecification ): JUnit5EngineDescriptor,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,2,0
+<Method>org.junit.gen5.engine.junit5.JUnit5TestEngine.public getId( ): String,getId( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+"<Method>org.junit.gen5.engine.junit5.JUnit5TestEngine.private resolveSpecification( TestPlanSpecification, JUnit5EngineDescriptor ): void","resolveSpecification( TestPlanSpecification, JUnit5EngineDescriptor ): void",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,2,3,0
+<Field>org.junit.gen5.engine.junit5.JUnit5TestEngine->ENGINE_ID,static final ENGINE_ID : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine.junit5.descriptor,org.junit.gen5.engine.junit5.descriptor,low,medium-high,medium-high,low,,,,,,142,595,,,,,,,,,,,,16,15,1,595,1,11,0.125,0.917,0.042,142,,,,,,
+org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext,AbstractExtensionContext,low,low,low,low,0,10,5,1,2,7,20,17,2,0,5,0,0,0.5,0.5,0.333,0,0,,,,20,,,,,,7,,,,,,
+<Method>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext. AbstractExtensionContext( ExtensionContext ): void, AbstractExtensionContext( ExtensionContext ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext.public getAttribute( String ): Object,getAttribute( String ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,6,1,2,3
+<Method>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext.public getParent( ): Optional,getParent( ): Optional,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext.public putAttribute( String, Object ): void","putAttribute( String, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,1
+<Method>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext.public removeAttribute( String ): Object,removeAttribute( String ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Field>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext->attributes,final attributes : Map,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.AbstractExtensionContext->parent,parent : ExtensionContext,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext,ClassBasedContainerExtensionContext,low-medium,low,low,low,2,6,3,2,0,4,14,12,1,0,4,0,0,0,0.5,0.5,1,0,,,,14,,,,,,4,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext.public ClassBasedContainerExtensionContext( ExtensionContext, ClassTestDescriptor ): void","ClassBasedContainerExtensionContext( ExtensionContext, ClassTestDescriptor ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext.public getDisplayName( ): String,getDisplayName( ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext.public getElement( ): AnnotatedElement,getElement( ): AnnotatedElement,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext.public getTestClass( ): Class,getTestClass( ): Class,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Field>org.junit.gen5.engine.junit5.descriptor.ClassBasedContainerExtensionContext->testDescriptor,final testDescriptor : ClassTestDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor,ClassTestDescriptor,medium-high,medium-high,low-medium,medium-high,16,102,30,3,1,21,124,121,2,0,18,0,1,0.5,0.772,0.917,1,0.167,,,,124,,,,,,21,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor. ClassTestDescriptor( String, Class ): void"," ClassTestDescriptor( String, Class ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,2,4,2
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public afterAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,afterAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,1,2,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public beforeAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,beforeAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,3,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public final getDisplayName( ): String,final getDisplayName( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public final getTags( ): Set,final getTags( ): Set,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public final getTestClass( ): Class,final getTestClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public final isTest( ): boolean,final isTest( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private invokeAfterAllExtensionPoints( TestExtensionRegistry, ContainerExtensionContext, List ): void","invokeAfterAllExtensionPoints( TestExtensionRegistry, ContainerExtensionContext, List ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,9,3,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private invokeBeforeAllExtensionPoints( TestExtensionRegistry, ContainerExtensionContext ): void","invokeBeforeAllExtensionPoints( TestExtensionRegistry, ContainerExtensionContext ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,8,2,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public isContainer( ): boolean,isContainer( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public prepare( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,prepare( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,15,1,10,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private registerAfterAllMethods( TestExtensionRegistry ): void,registerAfterAllMethods( TestExtensionRegistry ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,12,1,3,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private registerAfterEachMethods( TestExtensionRegistry ): void,registerAfterEachMethods( TestExtensionRegistry ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,8,1,3,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private registerBeforeAllMethods( TestExtensionRegistry ): void,registerBeforeAllMethods( TestExtensionRegistry ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,3,12,1,3,1
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private registerBeforeEachMethods( TestExtensionRegistry ): void,registerBeforeEachMethods( TestExtensionRegistry ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,3,9,1,3,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.private runMethodInTestExtensionContext( Method, TestExtensionContext, TestExtensionRegistry ): void","runMethodInTestExtensionContext( Method, TestExtensionContext, TestExtensionRegistry ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,3,4,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.public shouldBeSkipped( JUnit5EngineExecutionContext ): SkipResult,shouldBeSkipped( JUnit5EngineExecutionContext ): SkipResult,low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,7,1,6,0
+<Method>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor.protected testInstanceProvider( JUnit5EngineExecutionContext ): TestInstanceProvider,testInstanceProvider( JUnit5EngineExecutionContext ): TestInstanceProvider,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Field>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor->displayName,final displayName : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.ClassTestDescriptor->testClass,final testClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5Class,JUnit5Class,low-medium,low,low,low,1,5,2,2,1,3,10,8,1,0,3,0,0,0,0.5,0,0,0,,,,10,,,,,,3,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Class. JUnit5Class( String, Class ): void"," JUnit5Class( String, Class ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Class. accept( Visitor ): void, accept( Visitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Class. getJavaClass( ): Class, getJavaClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5Class->javaClass,final javaClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5EngineDescriptor,JUnit5EngineDescriptor,low-medium,low,low,low,3,4,1,3,0,2,6,5,0,0,2,0,0,0,0.333,0,0,0,,,,6,,,,,,2,,,,,,
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5EngineDescriptor.public JUnit5EngineDescriptor( TestEngine ): void,JUnit5EngineDescriptor( TestEngine ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5EngineDescriptor.public beforeAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,beforeAll( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+org.junit.gen5.engine.junit5.descriptor.JUnit5Method,JUnit5Method,low-medium,low,low,low,1,6,2,2,0,4,14,11,2,0,4,0,0,0.333,0.6,1,0,0,,,,14,,,,,,4,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Method. JUnit5Method( String, Method, Class ): void"," JUnit5Method( String, Method, Class ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,3,0,2
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Method. accept( Visitor ): void, accept( Visitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,2
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Method.public getContainerClass( ): Class,getContainerClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Method.public getJavaMethod( ): Method,getJavaMethod( ): Method,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5Method->containerClass,final containerClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5Method->javaMethod,final javaMethod : Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5NestedClass,JUnit5NestedClass,low-medium,low,low,low,2,6,3,3,0,3,10,8,1,0,3,0,1,0,0.5,0,1,1,,,,10,,,,,,3,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5NestedClass. JUnit5NestedClass( String, Class, Class ): void"," JUnit5NestedClass( String, Class, Class ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,3,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5NestedClass. accept( Visitor ): void, accept( Visitor ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5NestedClass. getContainerClass( ): Class, getContainerClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5NestedClass->containerClass,final containerClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor,JUnit5TestDescriptor,low-medium,low,low,low-medium,4,57,20,2,2,14,45,44,0,0,8,0,0,0,0.604,0,1,0,,,,45,,,,,,14,,,,,,
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected JUnit5TestDescriptor( String ): void,JUnit5TestDescriptor( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected determineDisplayName( AnnotatedElement, String ): String","determineDisplayName( AnnotatedElement, String ): String",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,4,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected executeAndCollectThrowables( Executable, List ): void","executeAndCollectThrowables( Executable, List ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,7,2,4,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected executeAndUnwrapTargetExceptionWrapper( Executable ): void,executeAndUnwrapTargetExceptionWrapper( Executable ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected executeAndWrapThrowables( Executable ): void,executeAndWrapThrowables( Executable ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,7,1,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected getTags( AnnotatedElement ): Set,getTags( AnnotatedElement ): Set,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,7,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected populateNewTestExtensionRegistryFromExtendWith( AnnotatedElement, TestExtensionRegistry ): TestExtensionRegistry","populateNewTestExtensionRegistryFromExtendWith( AnnotatedElement, TestExtensionRegistry ): TestExtensionRegistry",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,2,7,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestDescriptor.protected throwIfAnyThrowablePresent( List ): void,throwIfAnyThrowablePresent( List ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,5,0
+org.junit.gen5.engine.junit5.descriptor.JUnit5Testable,JUnit5Testable,medium-high,low,low,low,1,117,3,1,2,6,18,11,1,1,3,3,0,0.625,0.533,0,0,0,,,,18,,,,,,6,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5Testable.Visitor,Visitor,low,low,low,low,0,3,0,1,1,3,4,3,0,0,3,0,0,0,0.167,0,0,0,,,,4,,,,,,3,,,,,,
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable. JUnit5Testable( String ): void, JUnit5Testable( String ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable. getUniqueId( ): String, getUniqueId( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable.abstract accept( Visitor ): void,abstract accept( Visitor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,-2147483648,1,1,0,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable.static fromClass( Class, String ): JUnit5Testable","static fromClass( Class, String ): JUnit5Testable",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable.static fromMethod( Method, Class, String ): JUnit5Testable","static fromMethod( Method, Class, String ): JUnit5Testable",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable.static fromUniqueId( String, String ): JUnit5Testable","static fromUniqueId( String, String ): JUnit5Testable",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,1
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable->uniqueId,final uniqueId : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5Testable->testableFactory,static final testableFactory : JUnit5TestableFactory,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory,JUnit5TestableFactory,medium-high,low-medium,low-medium,low,10,113,54,1,0,27,97,92,0,4,15,2,0,1,0.578,0,2,0,,,,97,,,,,,27,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory. fromClass( Class, String ): JUnit5Testable"," fromClass( Class, String ): JUnit5Testable",low,low-medium,low,low,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,10,2,8,2
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory. fromMethod( Method, Class, String ): JUnit5Testable"," fromMethod( Method, Class, String ): JUnit5Testable",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,3,8,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory. fromUniqueId( String, String ): JUnit5Testable"," fromUniqueId( String, String ): JUnit5Testable",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,6,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private classByName( String ): Class,classByName( String ): Class,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private createNestedClassTestable( Class, Class, String ): JUnit5Testable","createNestedClassTestable( Class, Class, String ): JUnit5Testable",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,3,3,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private createTestable( String, String, List, JUnit5Testable ): JUnit5Testable","createTestable( String, String, List, JUnit5Testable ): JUnit5Testable",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,20,4,13,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private findMethod( Class, String, Class ): Method","findMethod( Class, String, Class ): Method",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,3,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private findMethod( String, Class, String ): Method","findMethod( String, Class, String ): Method",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,3,6,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private findNestedClass( String, Class ): Class","findNestedClass( String, Class ): Class",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,3,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private findTopLevelClass( String ): Class,findTopLevelClass( String ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private loadClassByName( String ): Class,loadClassByName( String ): Class,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private loadRequiredClass( String, String, String ): Class","loadRequiredClass( String, String, String ): Class",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,3,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private resolveParameterTypes( String, String ): Class","resolveParameterTypes( String, String ): Class",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,2,8,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private split( String ): List,split( String ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,10,1,5,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private static createCannotResolveUniqueIdException( String, String ): RuntimeException","static createCannotResolveUniqueIdException( String, String ): RuntimeException",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private static throwCannotResolveMethodException( Method ): void,static throwCannotResolveMethodException( Method ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory.private throwCannotResolveClassException( Class ): void,throwCannotResolveClassException( Class ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,0
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory->SEPARATORS,static final SEPARATORS : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory->isNestedTestClass,static final isNestedTestClass : IsNestedTestClass,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory->isPotentialTestContainer,static final isPotentialTestContainer : IsPotentialTestContainer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.JUnit5TestableFactory->isTestMethod,static final isTestMethod : IsTestMethod,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext,MethodBasedTestExtensionContext,low-medium,low,low,low-medium,2,9,4,2,0,6,23,20,2,0,6,0,0,0.5,0.625,0.533,1,0,,,,23,,,,,,6,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public MethodBasedTestExtensionContext( ExtensionContext, MethodTestDescriptor, Object ): void","MethodBasedTestExtensionContext( ExtensionContext, MethodTestDescriptor, Object ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,3,0,2
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public getDisplayName( ): String,getDisplayName( ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public getElement( ): AnnotatedElement,getElement( ): AnnotatedElement,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public getTestClass( ): Class,getTestClass( ): Class,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public getTestInstance( ): Object,getTestInstance( ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext.public getTestMethod( ): Method,getTestMethod( ): Method,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,1
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext->testDescriptor,final testDescriptor : MethodTestDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodBasedTestExtensionContext->testInstance,final testInstance : Object,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.MethodContextImpl,MethodContextImpl,low,low,low,low,0,4,0,1,0,4,14,11,2,0,3,1,0,0.5,0.333,1,0,0,,,,14,,,,,,4,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl.private MethodContextImpl( Object, Method ): void","MethodContextImpl( Object, Method ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl.public getInstance( ): Object,getInstance( ): Object,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl.public getMethod( ): Method,getMethod( ): Method,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl.public static methodContext( Object, Method ): MethodContext","static methodContext( Object, Method ): MethodContext",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,0,0
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl->instance,final instance : Object,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodContextImpl->method,final method : Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor,MethodTestDescriptor,low-medium,medium-high,low-medium,medium-high,12,85,27,3,0,15,88,84,3,0,14,0,1,0.667,0.732,0.972,1,0.214,,,,88,,,,,,15,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor. MethodTestDescriptor( String, Class, Method ): void"," MethodTestDescriptor( String, Class, Method ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,7,3,4,3
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public execute( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,execute( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,10,1,10,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public final getDisplayName( ): String,final getDisplayName( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public final getTags( ): Set,final getTags( ): Set,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,0,4,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public final getTestMethod( ): Method,final getTestMethod( ): Method,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public final isTest( ): boolean,final isTest( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public getTestClass( ): Class,getTestClass( ): Class,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.private invokeAfterEachExtensionPoints( TestExtensionRegistry, TestExtensionContext, List ): void","invokeAfterEachExtensionPoints( TestExtensionRegistry, TestExtensionContext, List ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,8,3,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.private invokeBeforeEachExtensionPoints( TestExtensionRegistry, TestExtensionContext ): void","invokeBeforeEachExtensionPoints( TestExtensionRegistry, TestExtensionContext ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,8,2,1,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.private invokeInstancePostProcessorExtensionPoints( TestExtensionRegistry, TestExtensionContext ): void","invokeInstancePostProcessorExtensionPoints( TestExtensionRegistry, TestExtensionContext ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,8,2,1,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.private invokeTestMethod( TestExtensionContext, TestExtensionRegistry, List ): void","invokeTestMethod( TestExtensionContext, TestExtensionRegistry, List ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,7,3,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public isContainer( ): boolean,isContainer( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public prepare( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,prepare( JUnit5EngineExecutionContext ): JUnit5EngineExecutionContext,low,low-medium,low,low,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,11,1,6,1
+<Method>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor.public shouldBeSkipped( JUnit5EngineExecutionContext ): SkipResult,shouldBeSkipped( JUnit5EngineExecutionContext ): SkipResult,low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,1,7,1,6,0
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor->displayName,final displayName : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor->testClass,final testClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.MethodTestDescriptor->testMethod,final testMethod : Method,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.descriptor.NestedClassTestDescriptor,NestedClassTestDescriptor,medium-high,low,low,low,2,2,0,4,0,2,9,8,0,0,2,0,1,0,0.375,0,0,2,,,,9,,,,,,2,,,,,,
+"<Method>org.junit.gen5.engine.junit5.descriptor.NestedClassTestDescriptor. NestedClassTestDescriptor( String, Class ): void"," NestedClassTestDescriptor( String, Class ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,0,0
+<Method>org.junit.gen5.engine.junit5.descriptor.NestedClassTestDescriptor.protected testInstanceProvider( JUnit5EngineExecutionContext ): TestInstanceProvider,testInstanceProvider( JUnit5EngineExecutionContext ): TestInstanceProvider,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,6,1,0,0
+org.junit.gen5.engine.junit5.descriptor.SpecificationResolver,SpecificationResolver,medium-high,medium-high,low-medium,low-medium,13,143,23,1,0,21,103,98,4,0,17,0,0,0.781,0.686,1,2,0,,,,103,,,,,,21,,,,,,
+<Anonymous> : Lorg.junit.gen5.engine.junit5.descriptor.SpecificationResolver$1550;,Lorg.junit.gen5.engine.junit5.descriptor.SpecificationResolver$1550;,low,low,low,low,0,0,0,1,0,0,17,0,0,0,0,0,0,0,0,0,0,0,,,,17,,,,,,0,,,,,,
+<Anonymous> : Lorg.junit.gen5.engine.junit5.descriptor.SpecificationResolver$3041;,Lorg.junit.gen5.engine.junit5.descriptor.SpecificationResolver$3041;,low,low,low,low,0,0,0,1,0,0,10,0,0,0,0,0,0,0,0,0,0,0,,,,10,,,,,,0,,,,,,
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.public SpecificationResolver( JUnit5EngineDescriptor ): void,SpecificationResolver( JUnit5EngineDescriptor ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private descriptorByUniqueId( String ): Optional,descriptorByUniqueId( String ): Optional,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private getOrCreateClassDescriptor( Class, String ): JUnit5TestDescriptor","getOrCreateClassDescriptor( Class, String ): JUnit5TestDescriptor",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private getOrCreateMethodDescriptor( Class, Method, String ): MethodTestDescriptor","getOrCreateMethodDescriptor( Class, Method, String ): MethodTestDescriptor",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,3,2,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private getOrCreateNestedClassDescriptor( Class, String ): NestedClassTestDescriptor","getOrCreateNestedClassDescriptor( Class, String ): NestedClassTestDescriptor",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,2,0
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveAndReturnParentTestable( JUnit5Testable ): TestDescriptor,resolveAndReturnParentTestable( JUnit5Testable ): TestDescriptor,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,7,1,4,0
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveClassSpecification( Class ): void,resolveClassSpecification( Class ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveClassTestable( Class, String, AbstractTestDescriptor, boolean ): void","resolveClassTestable( Class, String, AbstractTestDescriptor, boolean ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,4,4,0
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveContainedNestedClasses( Class ): void,resolveContainedNestedClasses( Class ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,4,2
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveContainedTestMethods( Class, AbstractTestDescriptor ): void","resolveContainedTestMethods( Class, AbstractTestDescriptor ): void",low,low-medium,low,low,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,9,2,6,2
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.public resolveElement( TestPlanSpecificationElement ): void,resolveElement( TestPlanSpecificationElement ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,19,1,1,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveMethodSpecification( Class, Method ): void","resolveMethodSpecification( Class, Method ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,3,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveMethodTestable( Method, Class, String ): void","resolveMethodTestable( Method, Class, String ): void",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,3,5,1
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveNestedClassTestable( String, Class, Class, boolean ): void","resolveNestedClassTestable( String, Class, Class, boolean ): void",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,9,4,7,1
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveTestable( JUnit5Testable ): void,resolveTestable( JUnit5Testable ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,0
+"<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveTestable( JUnit5Testable, boolean ): void","resolveTestable( JUnit5Testable, boolean ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,2,12,2,1,0
+<Method>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver.private resolveUniqueIdSpecification( String ): void,resolveUniqueIdSpecification( String ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,1
+<Field>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver->engineDescriptor,final engineDescriptor : JUnit5EngineDescriptor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver->isNestedTestClass,final isNestedTestClass : IsNestedTestClass,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver->isTestClassWithTests,final isTestClassWithTests : IsTestClassWithTests,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.descriptor.SpecificationResolver->isTestMethod,final isTestMethod : IsTestMethod,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine.junit5.execution,org.junit.gen5.engine.junit5.execution,low,low-medium,low-medium,low,,,,,,35,177,,,,,,,,,,,,10,8,2,177,5,7,0.2,0.583,0.217,35,,,,,,
+org.junit.gen5.engine.junit5.execution.AfterEachCallback,AfterEachCallback,low,low,low,low,1,1,0,1,0,1,4,1,0,0,1,0,0,0,0,0,0,0,,,,4,,,,,,1,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.AfterEachCallback.public abstract afterEach( TestExtensionContext, Object, List ): void","afterEach( TestExtensionContext, Object, List ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,3,0,0
+org.junit.gen5.engine.junit5.execution.BeforeEachCallback,BeforeEachCallback,low,low,low,low,1,1,0,1,0,1,3,1,0,0,1,0,0,0,0,0,0,0,,,,3,,,,,,1,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.BeforeEachCallback.public abstract beforeEach( TestExtensionContext, Object ): void","beforeEach( TestExtensionContext, Object ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,1,2,0,0
+org.junit.gen5.engine.junit5.execution.ConditionEvaluator,ConditionEvaluator,low,low-medium,low,low,7,13,9,1,0,6,32,29,0,1,4,0,0,0,0.5,0,0,0,,,,32,,,,,,6,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.ConditionEvaluator.private evaluate( ContainerExecutionCondition, ContainerExtensionContext ): ConditionEvaluationResult","evaluate( ContainerExecutionCondition, ContainerExtensionContext ): ConditionEvaluationResult",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,7,2,3,0
+"<Method>org.junit.gen5.engine.junit5.execution.ConditionEvaluator.private evaluate( TestExecutionCondition, TestExtensionContext ): ConditionEvaluationResult","evaluate( TestExecutionCondition, TestExtensionContext ): ConditionEvaluationResult",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,2,3,0
+"<Method>org.junit.gen5.engine.junit5.execution.ConditionEvaluator.public evaluateForContainer( TestExtensionRegistry, ContainerExtensionContext ): ConditionEvaluationResult","evaluateForContainer( TestExtensionRegistry, ContainerExtensionContext ): ConditionEvaluationResult",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,8,2,6,1
+"<Method>org.junit.gen5.engine.junit5.execution.ConditionEvaluator.public evaluateForTest( TestExtensionRegistry, TestExtensionContext ): ConditionEvaluationResult","evaluateForTest( TestExtensionRegistry, TestExtensionContext ): ConditionEvaluationResult",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,8,2,6,1
+<Field>org.junit.gen5.engine.junit5.execution.ConditionEvaluator->ENABLED,static final ENABLED : ConditionEvaluationResult,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.execution.ExtensionPointSorter,ExtensionPointSorter,low,low,low,low,2,12,11,1,0,5,26,21,0,0,4,0,0,0,0.083,0,0,0,,,,26,,,,,,5,,,,,,
+org.junit.gen5.engine.junit5.execution.ExtensionPointSorter.DefaultComparator,DefaultComparator,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.ExtensionPointSorter.private checkPositionUnique( List, Position ): void","checkPositionUnique( List, Position ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,6,2,3,0
+"<Method>org.junit.gen5.engine.junit5.execution.ExtensionPointSorter.private conflictingExtensions( List, Position ): List","conflictingExtensions( List, Position ): List",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,2,5,0
+"<Method>org.junit.gen5.engine.junit5.execution.ExtensionPointSorter.private countPosition( List, Position ): long","countPosition( List, Position ): long",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,3,0
+<Method>org.junit.gen5.engine.junit5.execution.ExtensionPointSorter.public sort( List ): void,sort( List ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,3,0
+org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext,JUnit5EngineExecutionContext,low,low,low-medium,low,3,8,1,1,0,8,52,16,1,0,6,2,0,0,0.583,0.714,0,0,,,,52,,,,,,8,,,,,,
+org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.Builder,Builder,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.State,State,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public JUnit5EngineExecutionContext( ): void,JUnit5EngineExecutionContext( ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,0
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.private JUnit5EngineExecutionContext( State ): void,JUnit5EngineExecutionContext( State ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public extend( ): Builder,extend( ): Builder,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,0
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public getExtensionContext( ): ExtensionContext,getExtensionContext( ): ExtensionContext,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public getTestExtensionRegistry( ): TestExtensionRegistry,getTestExtensionRegistry( ): TestExtensionRegistry,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public getTestInstanceProvider( ): TestInstanceProvider,getTestInstanceProvider( ): TestInstanceProvider,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public static builder( ): Builder,static builder( ): Builder,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,0
+<Method>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext.public static builder( JUnit5EngineExecutionContext ): Builder,static builder( JUnit5EngineExecutionContext ): Builder,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Field>org.junit.gen5.engine.junit5.execution.JUnit5EngineExecutionContext->state,final state : State,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.execution.MethodInvoker,MethodInvoker,low,low-medium,low,low,7,37,18,1,0,9,40,37,2,0,4,0,0,0,0.5,1,0,0,,,,40,,,,,,9,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.MethodInvoker.public MethodInvoker( ExtensionContext, TestExtensionRegistry ): void","MethodInvoker( ExtensionContext, TestExtensionRegistry ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,0,2
+<Method>org.junit.gen5.engine.junit5.execution.MethodInvoker.public invoke( MethodContext ): Object,invoke( MethodContext ): Object,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,4,0
+"<Method>org.junit.gen5.engine.junit5.execution.MethodInvoker.private resolveParameter( Parameter, MethodContext ): Object","resolveParameter( Parameter, MethodContext ): Object",low,low-medium,low,low,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,3,27,2,19,2
+<Method>org.junit.gen5.engine.junit5.execution.MethodInvoker.private resolveParameters( MethodContext ): Object,resolveParameters( MethodContext ): Object,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,5,0
+<Field>org.junit.gen5.engine.junit5.execution.MethodInvoker->extensionContext,final extensionContext : ExtensionContext,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.execution.MethodInvoker->extensionRegistry,final extensionRegistry : TestExtensionRegistry,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>,RegisteredExtensionPoint,low,low,low,low,3,36,2,1,0,5,20,16,3,0,5,0,0,0.583,0.6,0.4,0,0,,,,20,,,,,,5,,,,,,
+"<Method>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>.public RegisteredExtensionPoint( T, Position, String ): void","RegisteredExtensionPoint( T, Position, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,3,0,3
+<Method>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>.public getExtensionName( ): String,getExtensionName( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>.public getExtensionPoint( ): T,getExtensionPoint( ): T,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>.public getPosition( ): Position,getPosition( ): Position,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>.public toString( ): String,toString( ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,0,3,2
+<Field>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>->extensionName,final extensionName : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>->extensionPoint,final extensionPoint : T,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.engine.junit5.execution.RegisteredExtensionPoint<T>->position,final position : Position,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine.junit5.extension,org.junit.gen5.engine.junit5.extension,low,low,low,low,,,,,,4,14,,,,,,,,,,,,1,1,0,14,0,1,0,1,0,4,,,,,,
+org.junit.gen5.engine.junit5.extension.DisabledCondition,DisabledCondition,low,low,low,low,4,29,9,1,0,4,14,11,0,1,3,0,0,0,0.5,1,0,0,,,,14,,,,,,4,,,,,,
+<Method>org.junit.gen5.engine.junit5.extension.DisabledCondition.public evaluate( ContainerExtensionContext ): ConditionEvaluationResult,evaluate( ContainerExtensionContext ): ConditionEvaluationResult,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,0
+<Method>org.junit.gen5.engine.junit5.extension.DisabledCondition.private evaluate( Optional ): ConditionEvaluationResult,evaluate( Optional ): ConditionEvaluationResult,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,5,1
+<Method>org.junit.gen5.engine.junit5.extension.DisabledCondition.public evaluate( TestExtensionContext ): ConditionEvaluationResult,evaluate( TestExtensionContext ): ConditionEvaluationResult,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,0
+<Field>org.junit.gen5.engine.junit5.extension.DisabledCondition->ENABLED,static final ENABLED : ConditionEvaluationResult,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.engine.junit5.testers,org.junit.gen5.engine.junit5.testers,low,low,low,low,,,,,,11,28,,,,,,,,,,,,3,3,0,28,2,3,0,0.6,0.4,11,,,,,,
+org.junit.gen5.engine.junit5.testers.IsNestedTestClass,IsNestedTestClass,low,low,low,low,2,28,4,1,0,4,10,9,0,0,1,0,0,0,0,0,0,0,,,,10,,,,,,4,,,,,,
+<Method>org.junit.gen5.engine.junit5.testers.IsNestedTestClass.public test( Class ): boolean,test( Class ): boolean,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,1,9,1,4,0
+org.junit.gen5.engine.junit5.testers.IsPotentialTestContainer,IsPotentialTestContainer,low,low,low,low,1,8,4,1,0,3,8,7,0,0,1,0,0,0,0,0,0,0,,,,8,,,,,,3,,,,,,
+<Method>org.junit.gen5.engine.junit5.testers.IsPotentialTestContainer.public test( Class ): boolean,test( Class ): boolean,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,1,7,1,4,0
+org.junit.gen5.engine.junit5.testers.IsTestMethod,IsTestMethod,low,low,low,low,2,29,4,1,0,4,10,9,0,0,1,0,0,0,0,0,0,0,,,,10,,,,,,4,,,,,,
+<Method>org.junit.gen5.engine.junit5.testers.IsTestMethod.public test( Method ): boolean,test( Method ): boolean,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,1,9,1,4,0
+<Package>org.junit.gen5.junit4runner,org.junit.gen5.junit4runner,low,low,low-medium,low,,,,,,49,211,,,,,,,,,,,,10,3,7,211,0,3,0.7,1,0.7,49,,,,,,
+org.junit.gen5.junit4runner.JUnit5,JUnit5,low-medium,low-medium,low-medium,low,6,69,46,1,0,33,145,94,4,1,11,7,0,0.78,0.426,0,0,0,,,,145,,,,,,33,,,,,,
+org.junit.gen5.junit4runner.JUnit5.ClassNameMatches,ClassNameMatches,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.Classes,Classes,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.ExcludeTags,ExcludeTags,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.OnlyEngine,OnlyEngine,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.OnlyIncludeTags,OnlyIncludeTags,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.Packages,Packages,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+org.junit.gen5.junit4runner.JUnit5.UniqueIds,UniqueIds,low,low,low,low,0,1,0,1,0,1,5,1,0,0,1,0,0,0,0,0,0,0,,,,5,,,,,,1,,,,,,
+<Method>org.junit.gen5.junit4runner.JUnit5.public JUnit5( Class ): void,JUnit5( Class ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,2,3
+<Method>org.junit.gen5.junit4runner.JUnit5.private addClassNameMatches( TestPlanSpecification ): void,addClassNameMatches( TestPlanSpecification ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,5,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private addExcludeTagsFilter( TestPlanSpecification ): void,addExcludeTagsFilter( TestPlanSpecification ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,3,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private addOnlyIncludeEngineFilter( TestPlanSpecification ): void,addOnlyIncludeEngineFilter( TestPlanSpecification ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,4,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private addOnlyIncludeTagsFilter( TestPlanSpecification ): void,addOnlyIncludeTagsFilter( TestPlanSpecification ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,3,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private createSpecification( ): TestPlanSpecification,createSpecification( ): TestPlanSpecification,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,0,3,2
+<Method>org.junit.gen5.junit4runner.JUnit5.private createSpecificationFromAnnotations( ): TestPlanSpecification,createSpecificationFromAnnotations( ): TestPlanSpecification,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,13,0,14,1
+<Method>org.junit.gen5.junit4runner.JUnit5.protected generateTestTree( Class ): JUnit5TestTree,generateTestTree( Class ): JUnit5TestTree,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,1,4
+<Method>org.junit.gen5.junit4runner.JUnit5.private getClassnameSpecificationElements( ): List,getClassnameSpecificationElements( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,5,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private getPackagesSpecificationElements( ): List,getPackagesSpecificationElements( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,5,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private getUniqueIdSpecificationElements( ): List,getUniqueIdSpecificationElements( ): List,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,5,1
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedClassNameMatches( Class ): String,static getAnnotatedClassNameMatches( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedClasses( Class ): Class,static getAnnotatedClasses( Class ): Class,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedExcludeTags( Class ): String,static getAnnotatedExcludeTags( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedOnlyEngine( Class ): String,static getAnnotatedOnlyEngine( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedOnlyIncludeTags( Class ): String,static getAnnotatedOnlyIncludeTags( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedPackages( Class ): String,static getAnnotatedPackages( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Method>org.junit.gen5.junit4runner.JUnit5.private static getAnnotatedUniqueIds( Class ): String,static getAnnotatedUniqueIds( Class ): String,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,5,1,2,0
+<Field>org.junit.gen5.junit4runner.JUnit5->launcher,final launcher : Launcher,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.junit4runner.JUnit5->specification,final specification : TestPlanSpecification,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.junit4runner.JUnit5->testClass,final testClass : Class,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.junit4runner.JUnit5->testTree,final testTree : JUnit5TestTree,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.junit4runner.JUnit5->CREATE_SPECIFICATION_METHOD_NAME,static final CREATE_SPECIFICATION_METHOD_NAME : String,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.junit4runner.JUnit5RunnerListener,JUnit5RunnerListener,low,low,low,low,5,8,2,1,0,8,38,26,1,0,6,0,0,0,0.533,1,0,0,,,,38,,,,,,8,,,,,,
+<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public dynamicTestRegistered( TestIdentifier ): void,dynamicTestRegistered( TestIdentifier ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+"<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public executionFinished( TestIdentifier, TestExecutionResult ): void","executionFinished( TestIdentifier, TestExecutionResult ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,2,2,0
+"<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public executionSkipped( TestIdentifier, String ): void","executionSkipped( TestIdentifier, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,5,2,0,0
+<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public executionStarted( TestIdentifier ): void,executionStarted( TestIdentifier ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,1,0,0
+<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public testPlanExecutionFinished( TestPlan ): void,testPlanExecutionFinished( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,0
+<Method>org.junit.gen5.junit4runner.JUnit5RunnerListener.public testPlanExecutionStarted( TestPlan ): void,testPlanExecutionStarted( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,1
+<Field>org.junit.gen5.junit4runner.JUnit5RunnerListener->testTree,final testTree : JUnit5TestTree,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.junit4runner.JUnit5TestTree,JUnit5TestTree,low,low,low,low,1,1,0,1,0,1,28,2,1,0,1,0,0,0,0,0,0,0,,,,28,,,,,,1,,,,,,
+"<Method>org.junit.gen5.junit4runner.JUnit5TestTree. JUnit5TestTree( TestPlan, Class ): void"," JUnit5TestTree( TestPlan, Class ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,0,0
+<Field>org.junit.gen5.junit4runner.JUnit5TestTree->descriptions,final descriptions : Map,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.launcher,org.junit.gen5.launcher,low,low,low,low,,,,,,27,116,,,,,,,,,,,,4,4,0,116,2,3,0,0.6,0.4,27,,,,,,
+org.junit.gen5.launcher.Launcher,Launcher,low,medium-high,low-medium,low-medium,11,39,17,1,0,9,55,29,2,1,7,0,0,0.778,0.629,1,1,0,,,,55,,,,,,9,,,,,,
+org.junit.gen5.launcher.Launcher.ExecutionListenerAdapter,ExecutionListenerAdapter,low,low,low,low,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0,,,,0,,,,,,0,,,,,,
+<Method>org.junit.gen5.launcher.Launcher. Launcher( TestEngineRegistry ): void, Launcher( TestEngineRegistry ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.launcher.Launcher.public Launcher( ): void,Launcher( ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,0
+<Method>org.junit.gen5.launcher.Launcher.public discover( TestPlanSpecification ): TestPlan,discover( TestPlanSpecification ): TestPlan,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.launcher.Launcher.private discoverRootDescriptor( TestPlanSpecification ): RootTestDescriptor,discoverRootDescriptor( TestPlanSpecification ): RootTestDescriptor,low,low-medium,low,low,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,9,1,7,2
+<Method>org.junit.gen5.launcher.Launcher.private execute( RootTestDescriptor ): void,execute( RootTestDescriptor ): void,low,medium-high,low,low,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,10,1,7,1
+<Method>org.junit.gen5.launcher.Launcher.public execute( TestPlanSpecification ): void,execute( TestPlanSpecification ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,2,0
+<Method>org.junit.gen5.launcher.Launcher.public registerTestExecutionListeners( TestExecutionListener ): void,registerTestExecutionListeners( TestExecutionListener ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,1,1
+<Field>org.junit.gen5.launcher.Launcher->listenerRegistry,final listenerRegistry : TestExecutionListenerRegistry,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.launcher.Launcher->testEngineRegistry,final testEngineRegistry : TestEngineRegistry,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.launcher.Launcher->LOG,static final LOG : Logger,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.launcher.RootTestDescriptor,RootTestDescriptor,low-medium,low-medium,low-medium,low-medium,6,31,13,2,0,15,51,49,1,0,11,0,0,0,0.659,0.933,0,0,,,,51,,,,,,15,,,,,,
+<Method>org.junit.gen5.launcher.RootTestDescriptor. RootTestDescriptor( ): void, RootTestDescriptor( ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor. applyFilters( TestPlanSpecification ): void, applyFilters( TestPlanSpecification ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,1,1,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor. getTestDescriptorFor( TestEngine ): TestDescriptor, getTestDescriptorFor( TestEngine ): TestDescriptor,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,6,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor. getTestEngines( ): Iterable, getTestEngines( ): Iterable,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.launcher.RootTestDescriptor. prune( ): void, prune( ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,7,0,1,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public addChild( TestDescriptor ): void,addChild( TestDescriptor ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,4,1
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public getDisplayName( ): String,getDisplayName( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public isContainer( ): boolean,isContainer( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public isTest( ): boolean,isTest( ): boolean,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public removeChild( TestDescriptor ): void,removeChild( TestDescriptor ): void,low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,4,1
+<Method>org.junit.gen5.launcher.RootTestDescriptor.public toString( ): String,toString( ): String,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,1,0
+<Field>org.junit.gen5.launcher.RootTestDescriptor->testEngines,final testEngines : List,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.launcher.ServiceLoaderTestEngineRegistry,ServiceLoaderTestEngineRegistry,low,low,low,low,2,7,3,1,0,3,10,7,0,2,1,0,0,0,0,0,0,0,,,,10,,,,,,3,,,,,,
+<Method>org.junit.gen5.launcher.ServiceLoaderTestEngineRegistry.public lookupAllTestEngines( ): Iterable,lookupAllTestEngines( ): Iterable,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,7,0,3,5
+<Field>org.junit.gen5.launcher.ServiceLoaderTestEngineRegistry->LOG,static final LOG : Logger,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.launcher.ServiceLoaderTestEngineRegistry->testEngines,static testEngines : Iterable,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.launcher.listeners,org.junit.gen5.launcher.listeners,low,low,low,low,,,,,,23,69,,,,,,,,,,,,2,2,0,69,1,2,0,0.667,0.333,23,,,,,,
+org.junit.gen5.launcher.listeners.LoggingListener,LoggingListener,low,low,low,medium-high,3,18,10,1,0,11,32,30,1,0,9,2,0,0,0.737,1,0,0,,,,32,,,,,,11,,,,,,
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public LoggingListener( BiConsumer ): void,LoggingListener( BiConsumer ): void,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,0,1
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public dynamicTestRegistered( TestIdentifier ): void,dynamicTestRegistered( TestIdentifier ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,0
+"<Method>org.junit.gen5.launcher.listeners.LoggingListener.public executionFinished( TestIdentifier, TestExecutionResult ): void","executionFinished( TestIdentifier, TestExecutionResult ): void",low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,5,0
+"<Method>org.junit.gen5.launcher.listeners.LoggingListener.public executionSkipped( TestIdentifier, String ): void","executionSkipped( TestIdentifier, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,2,3,0
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public executionStarted( TestIdentifier ): void,executionStarted( TestIdentifier ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,3,0
+"<Method>org.junit.gen5.launcher.listeners.LoggingListener.private log( String, Object ): void","log( String, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,2,1,0
+"<Method>org.junit.gen5.launcher.listeners.LoggingListener.private logWithThrowable( String, Throwable, Object ): void","logWithThrowable( String, Throwable, Object ): void",low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,3,1,1
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public static forJavaUtilLogging( ): LoggingListener,static forJavaUtilLogging( ): LoggingListener,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,1,0
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public static forJavaUtilLogging( Level ): LoggingListener,static forJavaUtilLogging( Level ): LoggingListener,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,2,0
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public testPlanExecutionFinished( TestPlan ): void,testPlanExecutionFinished( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+<Method>org.junit.gen5.launcher.listeners.LoggingListener.public testPlanExecutionStarted( TestPlan ): void,testPlanExecutionStarted( TestPlan ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,0
+<Field>org.junit.gen5.launcher.listeners.LoggingListener->logger,final logger : BiConsumer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+org.junit.gen5.launcher.listeners.SummaryGeneratingListener,SummaryGeneratingListener,low,low,low,low,5,23,16,1,0,12,37,34,2,0,7,0,0,0.417,0.571,0,0,0,,,,37,,,,,,12,,,,,,
+<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public dynamicTestRegistered( TestIdentifier ): void,dynamicTestRegistered( TestIdentifier ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+"<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public executionFinished( TestIdentifier, TestExecutionResult ): void","executionFinished( TestIdentifier, TestExecutionResult ): void",low,low-medium,low,low,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,3,10,2,9,3
+"<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public executionSkipped( TestIdentifier, String ): void","executionSkipped( TestIdentifier, String ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,2,7,2
+<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public executionStarted( TestIdentifier ): void,executionStarted( TestIdentifier ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,2,2,4,1,2,1
+<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public getSummary( ): TestExecutionSummary,getSummary( ): TestExecutionSummary,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,0,0,1
+<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public testPlanExecutionFinished( TestPlan ): void,testPlanExecutionFinished( TestPlan ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,1,1
+<Method>org.junit.gen5.launcher.listeners.SummaryGeneratingListener.public testPlanExecutionStarted( TestPlan ): void,testPlanExecutionStarted( TestPlan ): void,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,6,1,3,4
+<Field>org.junit.gen5.launcher.listeners.SummaryGeneratingListener->summary,summary : TestExecutionSummary,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Field>org.junit.gen5.launcher.listeners.SummaryGeneratingListener->testPlan,testPlan : TestPlan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<Package>org.junit.gen5.surefire,org.junit.gen5.surefire,low,low,low,low,,,,,,11,84,,,,,,,,,,,,2,2,0,84,0,1,0,1,0,11,,,,,,
+org.junit.gen5.surefire.JUnitGen5Provider,JUnitGen5Provider,low,low,low,low,0,1,0,1,0,1,38,3,0,0,1,0,0,0,0,0,0,0,,,,38,,,,,,1,,,,,,
+<Method>org.junit.gen5.surefire.JUnitGen5Provider.public getSuites( ): Iterable,getSuites( ): Iterable,low,low,low,low,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,0,0,0
+org.junit.gen5.surefire.RunListenerAdapter,RunListenerAdapter,low,low,low,low,5,20,16,1,0,10,46,25,0,0,6,0,0,0,0.417,0,0,0,,,,46,,,,,,10,,,,,,
+"<Method>org.junit.gen5.surefire.RunListenerAdapter.public executionFinished( TestIdentifier, TestExecutionResult ): void","executionFinished( TestIdentifier, TestExecutionResult ): void",low,low,low,low,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,2,8,2,4,0
+"<Method>org.junit.gen5.surefire.RunListenerAdapter.public executionSkipped( TestIdentifier, String ): void","executionSkipped( TestIdentifier, String ): void",low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,4,2,2,0
+<Method>org.junit.gen5.surefire.RunListenerAdapter.public executionStarted( TestIdentifier ): void,executionStarted( TestIdentifier ): void,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,3,1,0,0
+<Method>org.junit.gen5.surefire.RunListenerAdapter.private getClassName( TestIdentifier ): Optional,getClassName( TestIdentifier ): Optional,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,3,6,1,9,0
+<Method>org.junit.gen5.surefire.RunListenerAdapter.private getClassNameOrUniqueId( TestIdentifier ): String,getClassNameOrUniqueId( TestIdentifier ): String,low,low,low,low,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,4,0
+<Method>org.junit.gen5.surefire.RunListenerAdapter.private getJavaSource( TestIdentifier ): Optional,getJavaSource( TestIdentifier ): Optional,low,low,low,low,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,1,2,1,3,0

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quality Analyzer</title>
+    <!-- Google Fonts: Inter and Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Code Quality Analyzer</h1>
+            <p>Paste your Python code below to check functionality, readability, and get instant feedback.</p>
+        </div>
+
+        <div class="card">
+            <form method="POST">
+                <div class="editor-container">
+                    <textarea name="code" placeholder="# Paste your Python code here...
+def hello_world():
+    print('Hello World')"></textarea>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit">Analyze Code</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<h2>Before vs After Refactor</h2>
+
+<table border="1">
+<tr>
+    <th>Metric</th>
+    <th>Before</th>
+    <th>After</th>
+</tr>
+{% for k in before_metrics %}
+<tr>
+    <td>{{ k }}</td>
+    <td>{{ before_metrics[k] }}</td>
+    <td>{{ after_metrics[k] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Score Improvement</h3>
+<p>Before: {{ before_score }}</p>
+<p>After: {{ after_score }}</p>

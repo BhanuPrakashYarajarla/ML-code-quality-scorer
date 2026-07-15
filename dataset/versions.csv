@@ -1,0 +1,15 @@
+no,repository name,version,Commits,Lines of Code,Number of Classes,Number of Package,Nomber of external package,number of externanal classes,no of problementica classes,no of highly problematic classes,Version Link
+1,spring-framework,2020-6,,226689,5482,432,97,741,352,29,
+2,spring-framework,2019-6,,214670,5252,402,95,735,323,27,
+3,spring-framework,2018-6,,197913,4892,390,94,720,327,21,
+4,spring-framework,2017-6,,185333,4775,385,93,699,312,22,
+5,spring-framework,2016-6,,179159,4521,371,84,639,292,20,
+6,spring-framework,2015-6,,171504,4353,364,84,624,263,19,
+7,Junit-5,2020-4,,15871,576,66,47,275,13,1,
+8,Junit-5,2020-1,,15688,568,65,47,274,13,1,
+9,Junit-5,2019-1,,13501,498,61,41,231,12,0,
+10,Junit-5,2018-1,,8667,317,40,39,215,5,0,
+11,Junit-5,2017-1,,6575,243,33,34,163,7,0,
+12,Junit-5,2016-1,,2843,137,19,19,109,1,0,
+13,Apache Kafka,2020-11,,,,,,,,,
+14,Apache Kafka,2020-06,7267,,,,,,,,https://github.com/apache/kafka/tree/cb88be45ebc400069c03ad8b9a2332da0aecc7b8

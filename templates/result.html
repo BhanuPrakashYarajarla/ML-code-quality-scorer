@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score-banner">
+            <p>Maintainability Score</p>
+            <h2>{{ score }}</h2>
+            <span class="quality-label {{ quality_class }}">{{ quality_label }} Quality</span>
+        </div>
+
+        <div class="results-grid">
+            <!-- Left Column: Explanations -->
+            <div class="analyis-column">
+                <div class="card">
+                    <div class="panel-title">Why this score?</div>
+                    <ul class="list-check">
+                        {% for w in why %}
+                        <li class="severity-{{ w.severity }}">
+                            <span class="severity-badge badge-{{ w.severity }}">{{ w.severity | upper }}</span>
+                            {{ w.text }}
+                        </li>
+                        {% else %}
+                        <li>All metrics are within normal range. Code looks good!</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="panel-title">Suggestions for Improvement</div>
+                    <ul class="list-warning">
+                        {% for f in fixes %}
+                        <li>{{ f }}</li>
+                        {% else %}
+                        <li>No immediate improvements needed. Keep up the good work!</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Raw Metrics -->
+            <div class="metrics-column">
+                <div class="card">
+                    <div class="panel-title">Detailed Metrics</div>
+                    <ul class="list-metrics">
+                        {% for k, v in metrics.items() %}
+                        <li>
+                            <span class="metric-label">
+                                {{ labels[k] }}
+                                <span class="metric-value">{{ v }}</span>
+                            </span>
+                            <small class="metric-hint">{{ hints[k] }}</small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <a href="/" class="btn-link">← Analyze another code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
