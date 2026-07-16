@@ -4,19 +4,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Metrics Explained](#metrics-explained)
-- [Scoring Pipeline](#scoring-pipeline)
-- [Getting Started](#getting-started)
-- [Dataset](#dataset)
-- [License](#license)
-
----
 
 ## Overview
 
@@ -183,29 +170,3 @@ To test the scoring pipeline on sample code snippets without the web UI:
 ```bash
 python verify_scoring.py
 ```
-
----
-
-## Dataset
-
-The ML model was trained on data from **10 real-world open-source Java projects**, including:
-
-- Spring Framework
-- JUnit 5
-- Apache Kafka
-- Apache Lucene/Solr
-- Dropwizard
-- Checkstyle
-- Apache Hadoop
-- Selenium
-- Apache SkyWalking
-- Signal Android
-
-The dataset includes code smell reports and quality attribute metrics across multiple versioned snapshots, sourced from the [PROMISE Software Engineering Repository](http://promise.site.uottawa.ca/SERepository/).
-
----
-
-## License
-
-This project was developed as part of an academic course project (Compiler Design — Semester 6).  
-For educational use only.
